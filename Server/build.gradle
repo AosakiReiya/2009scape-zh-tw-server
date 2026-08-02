@@ -1,0 +1,57 @@
+// 2009scape 伺服器 Gradle 建置（替代 Maven，相容 WSL/低資源環境）
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.20'
+}
+
+group = 'org.rs09'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://gitlab.com/api/v4/projects/32237206/packages/maven' }
+}
+
+sourceSets {
+    main {
+        java { srcDirs = ['src/main'] }
+        kotlin { srcDirs = ['src/main'] }
+        resources { srcDirs = ['src/main/resources'] }
+    }
+}
+
+dependencies {
+    // 本地 libs（ConstLib 1.4.24 從 GitLab Maven 手動下載放入 libs/）
+    implementation files('libs/ConstLib-1.4.24.jar')
+    implementation files('libs/PrimitiveExtensions-1.0.jar')
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.20'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.5.20'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.4.2'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.moandjiezana.toml:toml4j:0.7.2'
+    implementation 'mysql:mysql-connector-java:8.0.29'
+    implementation 'io.github.classgraph:classgraph:4.8.146'
+    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
+    implementation 'com.github.ajalt.mordant:mordant-jvm:2.0.0-beta6'
+    implementation 'com.google.errorprone:error_prone_annotations:2.9.0'
+    implementation 'org.java-websocket:Java-WebSocket:1.5.7'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    kotlinOptions.jvmTarget = '11'
+}
+
+jar {
+    manifest { attributes 'Main-Class': 'core.Server' }
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+}
