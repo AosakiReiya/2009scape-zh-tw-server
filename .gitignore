@@ -21,3 +21,4 @@ Server/.mvn/
 # IDE
 .idea/
 *.iml
+dumps/
