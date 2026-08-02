@@ -1,0 +1,102 @@
+package content.region.asgarnia.burthorpe.quest.deathplateau
+
+import content.data.Quests
+import content.global.handlers.iface.ScrollInterface
+import core.api.*
+import core.game.global.action.DoorActionHandler
+import core.game.interaction.IntType
+import core.game.interaction.InteractionListener
+import core.game.node.item.GroundItemManager
+import org.rs09.consts.Components
+import org.rs09.consts.Items
+import org.rs09.consts.Scenery
+
+class DeathPlateauInteractionListener : InteractionListener {
+
+    companion object {
+        val stoneBalls = intArrayOf(
+            Items.STONE_BALL_3109, // Red
+            Items.STONE_BALL_3110, // Blue
+            Items.STONE_BALL_3111, // Yellow
+            Items.STONE_BALL_3112, // Purple
+            Items.STONE_BALL_3113  // Green
+        )
+        val stoneMechanisms = intArrayOf(
+            Scenery.STONE_MECHANISM_3676, // 4 Outer stone plates
+            Scenery.STONE_MECHANISM_3677 // 2 Inner stone plates
+        )
+        val combinationScroll = arrayOf(
+            "Red is North of Blue. Yellow is South of Purple.",
+            "Green is North of Purple. Blue is West of",
+            "Yellow. Purple is East of Red."
+        )
+    }
+    override fun defineListeners() {
+        on(Scenery.DOOR_3747, SCENERY, "open") { player, node ->
+            // Harold's door
+            when (player.location) {
+                location(2906, 3543, 1), location(2905, 3543, 1), location(2907, 3543, 1) -> openDialogue(player, DeathPlateauDoorDialogueFile(1))
+                else -> DoorActionHandler.handleAutowalkDoor(player, node.asScenery())
+            }
+            return@on true
+        }
+        on(Scenery.DOOR_3745, SCENERY, "open") { player, node ->
+            when (node.location) {
+                location(2823, 3555, 0) -> openDialogue(player, DeathPlateauDoorDialogueFile(2)) //1st door to Tenzing
+                location(2820, 3558, 0) -> openDialogue(player, DeathPlateauDoorDialogueFile(3)) //2nd door to chicken pen
+                else -> DoorActionHandler.handleAutowalkDoor(player, node.asScenery())
+            }
+            return@on true
+        }
+
+        on(Items.IOU_3103, ITEM, "read") { player, _ ->
+            openDialogue(player, IOUNoteDialogueFile())
+            return@on true
+        }
+
+        on(Items.COMBINATION_3102, ITEM, "read") { player, _ ->
+            // https://youtu.be/C8n8Yi-J8wU?t=466
+            openInterface(player, 222)
+            setInterfaceText(player, combinationScroll.joinToString("<br>"), 222, 5)
+
+            return@on true
+        }
+
+        onUseWith(IntType.SCENERY, stoneBalls, *stoneMechanisms) { player, used, with ->
+            val stoneBall = used.asItem()
+            val stoneMechanism = with.asScenery()
+
+            // Place item on table
+            if (removeItem(player, stoneBall)) {
+                produceGroundItem(player, stoneBall.id, 1, stoneMechanism.location)
+            }
+            // Check if order was correct
+            /**
+             * Facing north
+             * NONE [2894, 3564, 0] [2895, 3564, 0] GREEN
+             * RED  [2894, 3563, 0] [2895, 3563, 0] PURPLE
+             * BLUE [2894, 3562, 0] [2895, 3562, 0] YELLOW
+             */
+            if (GroundItemManager.get(Items.STONE_BALL_3109, location(2894, 3563, 0), player) != null &&
+                GroundItemManager.get(Items.STONE_BALL_3110, location(2894, 3562, 0), player) != null &&
+                GroundItemManager.get(Items.STONE_BALL_3111, location(2895, 3562, 0), player) != null &&
+                GroundItemManager.get(Items.STONE_BALL_3112, location(2895, 3563, 0), player) != null &&
+                GroundItemManager.get(Items.STONE_BALL_3113, location(2895, 3564, 0), player) != null) {
+                if (getQuestStage(player, Quests.DEATH_PLATEAU) == 16) {
+                    sendMessage(player, "The equipment room door has unlocked.")
+                    setQuestStage(player, Quests.DEATH_PLATEAU, 19)
+                }
+            }
+            return@onUseWith true
+        }
+
+        on(Scenery.LARGE_DOOR_3743, SCENERY, "open") { player, node ->
+            if (getQuestStage(player, Quests.DEATH_PLATEAU) > 16) {
+                DoorActionHandler.handleAutowalkDoor(player, node as core.game.node.scenery.Scenery)
+            } else {
+                sendMessage(player, "The door is locked.")
+            }
+            return@on true
+        }
+    }
+}

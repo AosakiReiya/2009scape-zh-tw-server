@@ -1,0 +1,17 @@
+# build
+Server/target/
+Server/build/
+*.class
+
+# 執行期生成
+Server/data/eco/
+Server/data/players/
+Server/data/playerstats/
+Server/data/serverstore/
+Server/data/cache/
+*.db
+*.log
+
+# IDE
+.idea/
+*.iml
