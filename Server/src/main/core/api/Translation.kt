@@ -59,6 +59,7 @@ object Translation {
      * @param requirePhrase 若為 true，只有含空格/多詞的句子才翻譯（避免誤翻玩家名/單字）
      */
     @JvmStatic
+    @JvmOverloads
     fun translate(text: String, requirePhrase: Boolean = false): String {
         if (text.isEmpty() || !isLoaded()) {
             return text
