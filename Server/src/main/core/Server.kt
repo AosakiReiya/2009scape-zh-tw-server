@@ -67,6 +67,7 @@ object Server {
             log(this::class.java, Log.INFO, "Using config file: ${"worldprops" + File.separator + "default.conf"}")
             ServerConfigParser.parse("worldprops" + File.separator + "default.conf")
         }
+        core.api.Translation.init()
         startTime = System.currentTimeMillis()
         val t = TimeStamp()
         GameWorld.prompt(true)

@@ -489,7 +489,7 @@ public final class DialogueInterpreter {
             m.appendReplacement(sb, m.group(index));
         }
         m.appendTail(sb);
-        return sb.toString();
+        return core.api.Translation.translate(sb.toString());
     }
     /**
      * Send dialogues based on the amount of specified messages.

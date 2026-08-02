@@ -62,6 +62,7 @@ public final class PacketDispatch {
 		if (message == null) {
 			return;
 		}
+		message = core.api.Translation.translate(message, true);
 		if (player.getAttribute("chat_filter") != null && !message.contains("<col=CC6600>") && !message.contains("<col=FFFF00>")) {
 			return;
 		}
@@ -168,7 +169,7 @@ public final class PacketDispatch {
 	 * @param lineId The line id.
 	 */
 	public void sendString(String string, int interfaceId, int lineId) {
-		PacketRepository.send(StringPacket.class, new StringContext(player, string, interfaceId, lineId));
+		PacketRepository.send(StringPacket.class, new StringContext(player, core.api.Translation.translate(string, true), interfaceId, lineId));
 	}
 
 	/**
