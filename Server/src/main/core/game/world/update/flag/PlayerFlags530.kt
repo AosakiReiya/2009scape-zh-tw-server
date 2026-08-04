@@ -13,6 +13,7 @@ import core.game.world.GameWorld
 
 import kotlin.reflect.*
 import kotlin.math.max
+import java.nio.charset.StandardCharsets
 
 sealed class PlayerFlags530 (p: Int, o: Int, f: EntityFlag) : EFlagProvider (530, EFlagType.Player, p, o, f) {
     class Chat : PlayerFlags530 (0x80, 0, EntityFlag.Chat) {
@@ -27,15 +28,12 @@ sealed class PlayerFlags530 (p: Int, o: Int, f: EntityFlag) : EFlagProvider (530
             else
                 buffer.p1 (context.chatIcon)
             val chatBuf = ByteArray(256)
-            val encodedText = CP1252.toBytes(context.text)
+            val encodedText = context.text.toByteArray(StandardCharsets.UTF_8)
             chatBuf[0] = encodedText.size.toByte()
-            val offset = 1 + StringUtils.encryptPlayerChat (
-                chatBuf, 
-                0, 1, 
-                encodedText.size,
-                encodedText
-            )
-            buffer.p1 (offset + 1)
+            // 改為 UTF-8 明文廣播（與客戶端 WordPack 解碼對應），支援中文聊天
+            System.arraycopy(encodedText, 0, chatBuf, 1, encodedText.size)
+            val offset = 1 + encodedText.size
+            buffer.p1 (offset)
             buffer.putReverse (chatBuf, 0, offset)
         }
     }

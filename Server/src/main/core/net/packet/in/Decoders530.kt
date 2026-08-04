@@ -10,6 +10,7 @@ import core.tools.SystemLogger
 import java.io.PrintWriter
 import java.io.StringWriter
 import java.nio.BufferUnderflowException
+import java.nio.charset.StandardCharsets
 
 enum class Decoders530(val opcode: Int) {
     /******************************************
@@ -662,7 +663,11 @@ enum class Decoders530(val opcode: Int) {
             val effectPrefix = clamp(buffer.get(), 0, 11)
             val effectSuffix = clamp(buffer.get(), 0, 5)
             val numChars = buffer.smart
-            val message = StringUtils.decryptPlayerChat(buffer, numChars)
+            // 聊天訊息現以 UTF-8 明文傳輸（客戶端 WordPack.encode 改為不壓縮），
+            // 直接讀取指定長度的 UTF-8 bytes 解碼，支援中文。
+            val raw = ByteArray(numChars)
+            buffer.getBytes(raw, 0, numChars)
+            val message = String(raw, StandardCharsets.UTF_8)
             val effects = (effectPrefix shl 8) or effectSuffix
             return Packet.ChatMessage(player, effects, message)
         }
