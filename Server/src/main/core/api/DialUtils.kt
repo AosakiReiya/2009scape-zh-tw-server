@@ -31,23 +31,29 @@ fun stringWidthPx(s: String): Int {
 }
 
 /**
- * 按像素寬度自動拆行（預設每行最多 150px ≈ 14 個中文字 / 25 個英文字）。
- * 支援 <tag> 標籤（不計寬度）、超長連續字串在字元層級切分。
+ * 按像素寬度自動拆行（預設每行最多 300px ≈ 25 個中文字，對應對話框文字區實際寬度）。
+ * 支援 <tag> 標籤（不計寬度）。在中文標點（。，、」』！？；：）之後優先斷行，
+ * 避免把專名（如「倫布里奇」）從中間切開。
  */
-fun splitLines(message: String, perLinePx: Int = 150): Array<String> {
+fun splitLines(message: String, perLinePx: Int = 300): Array<String> {
     if (message.isEmpty()) return arrayOf("")
     val lines = mutableListOf<String>()
     val current = StringBuilder()
     var currentPx = 0
+    var lastPunctIdx = -1  // 目前行內最後一個可斷行標點的位置（current 內的索引）
+    var lastPunctPx = 0
     var i = 0
     val n = message.length
     val tagRegex = DialUtils.tagRegex
+    val punct = "。，、」』！？；：，．；：？！"
 
     fun pushLine() {
         if (current.isEmpty()) return
         lines.add(current.toString())
         current.clear()
         currentPx = 0
+        lastPunctIdx = -1
+        lastPunctPx = 0
     }
 
     while (i < n) {
@@ -63,8 +69,32 @@ fun splitLines(message: String, perLinePx: Int = 150): Array<String> {
         }
         val w = charWidthPx(c)
         if (currentPx + w > perLinePx && currentPx > 0) {
-            pushLine()
+            // 若行內有標點，在最後標點後斷行（避免切專名）；否則硬切
+            if (lastPunctIdx > 0) {
+                // 拆出到標點（含標點）的部分，其餘留給下一行
+                val keep = current.substring(0, lastPunctIdx + 1)
+                val rest = current.substring(lastPunctIdx + 1)
+                lines.add(keep)
+                current.setLength(0)
+                current.append(rest)
+                currentPx = currentPx - lastPunctPx
+                lastPunctIdx = -1
+                lastPunctPx = 0
+                // 重新掃描 rest 內的標點
+                for (ri in 0 until current.length) {
+                    if (punct.indexOf(current[ri]) >= 0) {
+                        lastPunctIdx = ri
+                        lastPunctPx = stringWidthPx(current.substring(0, ri + 1))
+                    }
+                }
+            } else {
+                pushLine()
+            }
             continue
+        }
+        if (punct.indexOf(c) >= 0) {
+            lastPunctIdx = current.length
+            lastPunctPx = currentPx + w
         }
         current.append(c)
         currentPx += w
