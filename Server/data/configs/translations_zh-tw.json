@@ -61744,5 +61744,8 @@
   "He's a very important druid.": "他是一位非常重要的德魯伊。",
   "An important looking chair.": "一把看起來很重要的椅子。",
   "This person was of great importance.": "此人曾具有極高的重要性。",
-  "Many important meetings are held here...": "許多重要的會議都在此舉行..."
+  "Many important meetings are held here...": "許多重要的會議都在此舉行...",
+  "@pre:Well done, you've just cooked your first ~~ meal.": "做得好，你剛烹飪了你的第一個 ~~ 餐點。",
+  "@pre:Well done, you've just cooked your first ~~": "做得好，你剛烹飪了你的第一個 ~~",
+  "@pre:You've just cooked your first ~~ meal.": "你剛烹飪了你的第一個 ~~ 餐點。"
 }
