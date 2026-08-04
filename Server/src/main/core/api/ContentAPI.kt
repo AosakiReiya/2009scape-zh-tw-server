@@ -928,7 +928,7 @@ fun emote(entity: Entity, emote: Emotes) {
  * @param message the message to send.
  */
 fun sendMessage(player: Player, message: String) {
-    player.sendMessages(*splitLines(message, 86))
+    player.sendMessages(*splitLines(core.api.Translation.translate(message), 516))
 }
 
 /**
@@ -951,7 +951,7 @@ fun sendChat(entity: Entity, message: String, delay: Int = -1) {
  * @param message the message to send, lines are split automatically.
  */
 fun sendDialogue(player: Player, message: String) {
-    player.dialogueInterpreter.sendDialogue(*splitLines(message))
+    player.dialogueInterpreter.sendDialogue(*splitLines(core.api.Translation.translate(message)))
 }
 
 /**
@@ -1803,7 +1803,7 @@ fun closeAllInterfaces(player: Player) {
  * @param hide should the continue button be hidden?
  */
 fun sendPlayerDialogue(player: Player, msg: String, expr: core.game.dialogue.FacialExpression = core.game.dialogue.FacialExpression.FRIENDLY, hide: Boolean = false) {
-    player.dialogueInterpreter.sendDialogues(player, expr, hide, *splitLines(msg))
+    player.dialogueInterpreter.sendDialogues(player, expr, hide, *splitLines(core.api.Translation.translate(msg)))
 }
 
 /**
@@ -1826,7 +1826,7 @@ fun sendPlayerOnInterface(player: Player, iface: Int, child: Int) {
  */
 fun sendNPCDialogue(player: Player, npc: Int, msg: String, expr: core.game.dialogue.FacialExpression = core.game.dialogue.FacialExpression.FRIENDLY,
                     hide: Boolean = false) {
-    player.dialogueInterpreter.sendDialogues(npc, expr, hide,  *splitLines(msg))
+    player.dialogueInterpreter.sendDialogues(npc, expr, hide,  *splitLines(core.api.Translation.translate(msg)))
 }
 
 /**
@@ -1909,7 +1909,7 @@ fun sendItemDialogue(player: Player, item: Any, message: String) {
         }
     }
 
-    player.dialogueInterpreter.sendItemMessage(dialogueItem, *splitLines(message))
+    player.dialogueInterpreter.sendItemMessage(dialogueItem, *splitLines(core.api.Translation.translate(message)))
 }
 
 /**
@@ -1921,8 +1921,8 @@ fun sendItemDialogue(player: Player, item: Any, message: String) {
  */
 fun sendDoubleItemDialogue(player: Player, item1: Any, item2: Any, message: String) {
     when (item1) {
-        is Item -> player.dialogueInterpreter.sendDoubleItemMessage(item1, item2 as Item, *splitLines(message))
-        is Int -> player.dialogueInterpreter.sendDoubleItemMessage(item1, item2 as Int, *splitLines(message))
+        is Item -> player.dialogueInterpreter.sendDoubleItemMessage(item1, item2 as Item, *splitLines(core.api.Translation.translate(message)))
+        is Int -> player.dialogueInterpreter.sendDoubleItemMessage(item1, item2 as Int, *splitLines(core.api.Translation.translate(message)))
     }
 }
 

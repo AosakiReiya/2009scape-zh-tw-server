@@ -4,6 +4,7 @@ import core.cache.crypto.ISAACCipher;
 import core.cache.misc.buffer.ByteBufferUtils;
 
 import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 
 /**
  * Represents the buffer used for reading/writing packets.
@@ -504,7 +505,8 @@ public class IoBuffer {
 	 * @return
 	 */
 	public IoBuffer putString(String val) {
-		buf.put(val.getBytes());
+		// 一律以 UTF-8 序列化（Windows 平台預設編碼為 GBK，會導致 client UTF-8 解碼亂碼）
+		buf.put(val.getBytes(StandardCharsets.UTF_8));
 		buf.put((byte) 0);
 		return this;
 	}
@@ -515,7 +517,7 @@ public class IoBuffer {
 	 */
 	public IoBuffer putJagString(String val) {
 		buf.put((byte) 0);
-		buf.put(val.getBytes());
+		buf.put(val.getBytes(StandardCharsets.UTF_8));
 		buf.put((byte) 0);
 		return this;
 	}

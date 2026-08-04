@@ -72,19 +72,19 @@ abstract class DialogueFile {
      * @param msg the message for the NPC to say
      */
     open fun npcl(expr: FacialExpression?, msg: String?): Component? {
-        return npc(expr, *splitLines(msg!!))
+        return npc(expr, *splitLines(translateMsg(msg)))
     }
 
     open fun npcl(id: Int, expr: FacialExpression?, msg: String?): Component? {
-        return npc(id, expr, *splitLines(msg!!))
+        return npc(id, expr, *splitLines(translateMsg(msg)))
     }
 
     open fun npcl(id: Int, title: String, expr: FacialExpression?, msg: String?): Component? {
-        return npc(id, title, expr, *splitLines(msg!!))
+        return npc(id, title, expr, *splitLines(translateMsg(msg)))
     }
 
     open fun npcl(msg: String?): Component? {
-        return npc(*splitLines(msg!!))
+        return npc(*splitLines(translateMsg(msg)))
     }
 
     /**
@@ -93,11 +93,20 @@ abstract class DialogueFile {
      * @param msg the message for the player to say
      */
     open fun playerl(expr: FacialExpression?, msg: String?): Component? {
-        return player(expr, *splitLines(msg!!))
+        return player(expr, *splitLines(translateMsg(msg)))
     }
 
     open fun playerl(msg: String?): Component? {
-        return player(*splitLines(msg!!))
+        return player(*splitLines(translateMsg(msg)))
+    }
+
+    /**
+     * 在拆行前翻譯完整訊息，避免拆行後片段無法命中翻譯表。
+     * 若翻譯表未命中則回傳原文（不影響未翻譯內容）。
+     */
+    private fun translateMsg(msg: String?): String {
+        if (msg == null) return ""
+        return core.api.Translation.translate(msg)
     }
 
     open fun end(){

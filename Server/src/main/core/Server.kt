@@ -71,6 +71,12 @@ object Server {
         startTime = System.currentTimeMillis()
         val t = TimeStamp()
         GameWorld.prompt(true)
+        if (args.any { it == "--extract-cache" }) {
+            val outIdx = args.indexOf("--extract-cache")
+            val outPath = if (outIdx >= 0 && outIdx + 1 < args.size) args[outIdx + 1] else "cache_strings.json"
+            core.api.Translation.extractCacheStrings(outPath)
+            kotlin.system.exitProcess(0)
+        }
         Runtime.getRuntime().addShutdownHook(ServerConstants.SHUTDOWN_HOOK)
         log(this::class.java, Log.INFO, "Starting networking...")
         try {

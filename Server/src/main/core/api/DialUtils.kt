@@ -11,80 +11,71 @@ object DialUtils {
 }
 
 /**
- * Automatically split a single continuous string into multiple comma-separated lines.
- * Should this not work out for any reason, you should fallback to standard npc and player methods for dialogue.
+ * 估算字元在對話框中的像素寬度。
+ * 中文（CJK）全形字約 12px、ASCII 約 6px、其餘約 8px（與 CJKRenderer 全形一致）。
  */
-fun splitLines(message: String, perLineLimit: Int = 54): Array<String> {
-    var lines = Array(ceil(DialUtils.removeMatches(message, DialUtils.tagRegex).length / perLineLimit.toFloat()).toInt()) { "" }
-
-    //short circuit when possible because it's cheaper.
-    if (lines.size == 1) {
-        lines[0] = message
-        return lines
+fun charWidthPx(c: Char): Int {
+    return when {
+        c == '\n' || c == '\r' -> 0
+        Character.UnicodeScript.of(c.code) == Character.UnicodeScript.HAN -> 12
+        c.code <= 0x7E && c.code >= 0x20 -> 6
+        else -> 8
     }
+}
 
-    val tokenQueue = LinkedList(message.split(" "))
-    var index = 0
-    val line = StringBuilder()
-    var accumulator = 0
+/** 計算字串去標籤後的像素寬度。 */
+fun stringWidthPx(s: String): Int {
+    var w = 0
+    for (c in s) w += charWidthPx(c)
+    return w
+}
 
-    val openTags = LinkedList<String>()
+/**
+ * 按像素寬度自動拆行（預設每行最多 150px ≈ 14 個中文字 / 25 個英文字）。
+ * 支援 <tag> 標籤（不計寬度）、超長連續字串在字元層級切分。
+ */
+fun splitLines(message: String, perLinePx: Int = 150): Array<String> {
+    if (message.isEmpty()) return arrayOf("")
+    val lines = mutableListOf<String>()
+    val current = StringBuilder()
+    var currentPx = 0
+    var i = 0
+    val n = message.length
+    val tagRegex = DialUtils.tagRegex
 
     fun pushLine() {
-        if (line.isEmpty()) return
-
-        // find all tags that were opened or closed in the line
-        for (lineTag in DialUtils.tagRegex.findAll(line)) {
-            if (lineTag.value.get(1) == '/') {
-                // closing tag encountered; remove it from the list of open tags
-                for (openTag in openTags.descendingIterator()) {
-                    val lineTagName = lineTag.value.substring(2, lineTag.value.length - 1)
-                    val openTagName = openTag.substring(1, lineTag.value.length - 2)
-                    if (lineTagName == openTagName) {
-                        openTags.remove(openTag)
-                        break
-                    }
-                }
-            } else {
-                openTags.add(lineTag.value)
-            }
-        }
-
-        //allow array to be resized - there are specific edgecases where it becomes necessary. (Check the unit test for example)
-        if (lines.size == index)
-            lines = lines.plus(line.toString())
-        else
-            lines[index] = line.toString()
-        index++
-        line.clear()
-        accumulator = 0
-
-        // if any unclosed tags remain, add them to the beginning of the new line
-        for (tag in openTags) line.append(tag)
-        openTags.clear()
+        if (current.isEmpty()) return
+        lines.add(current.toString())
+        current.clear()
+        currentPx = 0
     }
 
-    while (!tokenQueue.isEmpty()) {
-        val shouldSpace = DialUtils.removeMatches(line.toString(), DialUtils.tagRegex).isNotEmpty()
-        accumulator += DialUtils.removeMatches(tokenQueue.peek(), DialUtils.tagRegex).length
-
-        if (shouldSpace) accumulator += 1
-        if (accumulator > perLineLimit) {
+    while (i < n) {
+        val c = message[i]
+        // 標籤：整段 `<...>` 不計寬度，原樣保留
+        if (c == '<') {
+            val m = tagRegex.find(message, i)
+            if (m != null) {
+                current.append(m.value)
+                i = m.range.last + 1
+                continue
+            }
+        }
+        val w = charWidthPx(c)
+        if (currentPx + w > perLinePx && currentPx > 0) {
             pushLine()
             continue
         }
-
-        if (shouldSpace) line.append(" ")
-        line.append(tokenQueue.pop())
+        current.append(c)
+        currentPx += w
+        i++
     }
-
     pushLine()
 
-    // If there's 5 lines, merge lines 4 and 5 into line 4.
+    // 最多 4 行；超過時以 <br> 併入第 4 行（保留最後兩行內容）
     if (lines.size > 4) {
-        lines[3] = lines[3] + "<br>" + lines[4]
-        lines = lines.sliceArray(0..3)
+        val extra = lines.drop(3).joinToString("<br>")
+        return arrayOf(lines[0], lines[1], lines[2], extra)
     }
-
-    return lines
+    return lines.toTypedArray()
 }

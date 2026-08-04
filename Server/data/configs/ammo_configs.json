@@ -1,7 +1,7 @@
 [
   {
     "itemId": "78",
-    "name": "Ice arrows",
+    "name": "冰箭",
     "start_graphic": "25,96",
     "darkbow_graphic": "1110,96",
     "projectile": "16,40,36,41,46,5,0",
@@ -9,7 +9,7 @@
   },
   {
     "itemId": "598",
-    "name": "Bronze fire arrows",
+    "name": "青銅火焰箭",
     "start_graphic": "26,96",
     "darkbow_graphic": "1113,96",
     "projectile": "17,40,36,41,46,5,0",
@@ -17,7 +17,7 @@
   },
   {
     "itemId": "732",
-    "name": "Holy water",
+    "name": "聖水",
     "start_graphic": "193,0",
     "darkbow_graphic": "",
     "projectile": "192,40,36,32,32,15,0",
@@ -25,7 +25,7 @@
   },
   {
     "itemId": "800",
-    "name": "Bronze thrownaxe",
+    "name": "青銅投擲斧",
     "start_graphic": "43,96",
     "darkbow_graphic": "",
     "projectile": "36,40,36,32,32,15,0",
@@ -33,7 +33,7 @@
   },
   {
     "itemId": "801",
-    "name": "Iron thrownaxe",
+    "name": "鐵投擲斧",
     "start_graphic": "42,96",
     "darkbow_graphic": "",
     "projectile": "35,40,36,32,32,15,0",
@@ -41,7 +41,7 @@
   },
   {
     "itemId": "802",
-    "name": "Steel thrownaxe",
+    "name": "鋼投擲斧",
     "start_graphic": "44,96",
     "darkbow_graphic": "",
     "projectile": "37,40,36,32,32,15,0",
@@ -49,7 +49,7 @@
   },
   {
     "itemId": "803",
-    "name": "Mithril thrownaxe",
+    "name": "祕銀投擲斧",
     "start_graphic": "45,96",
     "darkbow_graphic": "",
     "projectile": "38,40,36,32,32,15,0",
@@ -57,7 +57,7 @@
   },
   {
     "itemId": "804",
-    "name": "Adamant thrownaxe",
+    "name": "精鋼投擲斧",
     "start_graphic": "46,96",
     "darkbow_graphic": "",
     "projectile": "39,40,36,32,32,15,0",
@@ -65,7 +65,7 @@
   },
   {
     "itemId": "805",
-    "name": "Rune thrownaxe",
+    "name": "符文投擲斧",
     "start_graphic": "48,96",
     "darkbow_graphic": "",
     "projectile": "41,40,36,32,32,15,0",
@@ -73,7 +73,7 @@
   },
   {
     "itemId": "806",
-    "name": "Bronze dart",
+    "name": "青銅飛鏢",
     "start_graphic": "232,96",
     "darkbow_graphic": "",
     "projectile": "226,40,36,32,32,15,0",
@@ -81,7 +81,7 @@
   },
   {
     "itemId": "807",
-    "name": "Iron dart",
+    "name": "鐵飛鏢",
     "start_graphic": "233,96",
     "darkbow_graphic": "",
     "projectile": "227,40,36,32,32,15,0",
@@ -89,7 +89,7 @@
   },
   {
     "itemId": "808",
-    "name": "Steel dart",
+    "name": "鋼飛鏢",
     "start_graphic": "234,96",
     "darkbow_graphic": "",
     "projectile": "228,40,36,32,32,15,0",
@@ -97,7 +97,7 @@
   },
   {
     "itemId": "809",
-    "name": "Mithril dart",
+    "name": "祕銀飛鏢",
     "start_graphic": "235,96",
     "darkbow_graphic": "",
     "projectile": "229,40,36,32,32,15,0",
@@ -105,7 +105,7 @@
   },
   {
     "itemId": "810",
-    "name": "Adamant dart",
+    "name": "精鋼飛鏢",
     "start_graphic": "236,96",
     "darkbow_graphic": "",
     "projectile": "230,40,36,32,32,15,0",
@@ -113,7 +113,7 @@
   },
   {
     "itemId": "811",
-    "name": "Rune dart",
+    "name": "符文飛鏢",
     "start_graphic": "237,96",
     "darkbow_graphic": "",
     "projectile": "231,40,36,32,32,15,0",
@@ -121,7 +121,7 @@
   },
   {
     "itemId": "812",
-    "name": "Bronze dart(p)",
+    "name": "青銅飛鏢(p)",
     "start_graphic": "232,96",
     "darkbow_graphic": "",
     "projectile": "226,40,36,32,32,15,0",
@@ -129,7 +129,7 @@
   },
   {
     "itemId": "813",
-    "name": "Iron dart(p)",
+    "name": "鐵飛鏢(p)",
     "start_graphic": "233,96",
     "darkbow_graphic": "",
     "projectile": "227,40,36,32,32,15,0",
@@ -137,7 +137,7 @@
   },
   {
     "itemId": "814",
-    "name": "Steel dart(p)",
+    "name": "鋼飛鏢(p)",
     "start_graphic": "234,96",
     "darkbow_graphic": "",
     "projectile": "228,40,36,32,32,15,0",
@@ -145,7 +145,7 @@
   },
   {
     "itemId": "815",
-    "name": "Mithril dart(p)",
+    "name": "祕銀飛鏢(p)",
     "start_graphic": "235,96",
     "darkbow_graphic": "",
     "projectile": "229,40,36,32,32,15,0",
@@ -153,7 +153,7 @@
   },
   {
     "itemId": "816",
-    "name": "Adamant dart(p)",
+    "name": "精鋼飛鏢(p)",
     "start_graphic": "236,96",
     "darkbow_graphic": "",
     "projectile": "230,40,36,32,32,15,0",
@@ -161,7 +161,7 @@
   },
   {
     "itemId": "817",
-    "name": "Rune dart(p)",
+    "name": "符文飛鏢(p)",
     "start_graphic": "237,96",
     "darkbow_graphic": "",
     "projectile": "231,40,36,32,32,15,0",
@@ -169,7 +169,7 @@
   },
   {
     "itemId": "825",
-    "name": "Bronze javelin",
+    "name": "青銅標槍",
     "start_graphic": "206,96",
     "darkbow_graphic": "",
     "projectile": "200,40,36,32,32,15,0",
@@ -177,7 +177,7 @@
   },
   {
     "itemId": "826",
-    "name": "Iron javelin",
+    "name": "鐵標槍",
     "start_graphic": "207,96",
     "darkbow_graphic": "",
     "projectile": "201,40,36,32,32,15,0",
@@ -185,7 +185,7 @@
   },
   {
     "itemId": "827",
-    "name": "Steel javelin",
+    "name": "鋼標槍",
     "start_graphic": "208,96",
     "darkbow_graphic": "",
     "projectile": "202,40,36,32,32,15,0",
@@ -193,7 +193,7 @@
   },
   {
     "itemId": "828",
-    "name": "Mithril javelin",
+    "name": "祕銀標槍",
     "start_graphic": "209,96",
     "darkbow_graphic": "",
     "projectile": "203,40,36,32,32,15,0",
@@ -201,7 +201,7 @@
   },
   {
     "itemId": "829",
-    "name": "Adamant javelin",
+    "name": "精鋼標槍",
     "start_graphic": "210,96",
     "darkbow_graphic": "",
     "projectile": "204,40,36,32,32,15,0",
@@ -209,7 +209,7 @@
   },
   {
     "itemId": "830",
-    "name": "Rune javelin",
+    "name": "符文標槍",
     "start_graphic": "211,96",
     "darkbow_graphic": "",
     "projectile": "205,40,36,32,32,15,0",
@@ -217,7 +217,7 @@
   },
   {
     "itemId": "831",
-    "name": "Bronze javelin(p)",
+    "name": "青銅標槍(p)",
     "start_graphic": "206,96",
     "darkbow_graphic": "",
     "projectile": "200,40,36,32,32,15,0",
@@ -225,7 +225,7 @@
   },
   {
     "itemId": "832",
-    "name": "Iron javelin(p)",
+    "name": "鐵標槍(p)",
     "start_graphic": "207,96",
     "darkbow_graphic": "",
     "projectile": "201,40,36,32,32,15,0",
@@ -233,7 +233,7 @@
   },
   {
     "itemId": "833",
-    "name": "Steel javelin(p)",
+    "name": "鋼標槍(p)",
     "start_graphic": "208,96",
     "darkbow_graphic": "",
     "projectile": "202,40,36,32,32,15,0",
@@ -241,7 +241,7 @@
   },
   {
     "itemId": "834",
-    "name": "Mithril javelin(p)",
+    "name": "祕銀標槍(p)",
     "start_graphic": "209,96",
     "darkbow_graphic": "",
     "projectile": "203,40,36,32,32,15,0",
@@ -249,7 +249,7 @@
   },
   {
     "itemId": "835",
-    "name": "Adamant javelin(p)",
+    "name": "精鋼標槍(p)",
     "start_graphic": "210,96",
     "darkbow_graphic": "",
     "projectile": "204,40,36,32,32,15,0",
@@ -257,7 +257,7 @@
   },
   {
     "itemId": "836",
-    "name": "Rune javelin(p)",
+    "name": "符文標槍(p)",
     "start_graphic": "211,96",
     "darkbow_graphic": "",
     "projectile": "205,40,36,32,32,15,0",
@@ -265,7 +265,7 @@
   },
   {
     "itemId": "863",
-    "name": "Iron knife",
+    "name": "鐵小刀",
     "start_graphic": "220,96",
     "darkbow_graphic": "",
     "projectile": "213,40,36,32,32,15,0",
@@ -273,7 +273,7 @@
   },
   {
     "itemId": "864",
-    "name": "Bronze knife",
+    "name": "青銅小刀",
     "start_graphic": "219,96",
     "darkbow_graphic": "",
     "projectile": "212,40,36,32,32,15,0",
@@ -281,7 +281,7 @@
   },
   {
     "itemId": "865",
-    "name": "Steel knife",
+    "name": "鋼小刀",
     "start_graphic": "221,96",
     "darkbow_graphic": "",
     "projectile": "214,40,36,32,32,15,0",
@@ -289,7 +289,7 @@
   },
   {
     "itemId": "866",
-    "name": "Mithril knife",
+    "name": "祕銀小刀",
     "start_graphic": "223,96",
     "darkbow_graphic": "",
     "projectile": "216,40,36,32,32,15,0",
@@ -297,7 +297,7 @@
   },
   {
     "itemId": "867",
-    "name": "Adamant knife",
+    "name": "精鋼小刀",
     "start_graphic": "224,96",
     "darkbow_graphic": "",
     "projectile": "217,40,36,32,32,15,0",
@@ -305,7 +305,7 @@
   },
   {
     "itemId": "868",
-    "name": "Rune knife",
+    "name": "符文小刀",
     "start_graphic": "225,96",
     "darkbow_graphic": "",
     "projectile": "218,40,36,32,32,15,0",
@@ -313,7 +313,7 @@
   },
   {
     "itemId": "869",
-    "name": "Black knife",
+    "name": "黑小刀",
     "start_graphic": "222,96",
     "darkbow_graphic": "",
     "projectile": "215,40,36,32,32,15,0",
@@ -321,7 +321,7 @@
   },
   {
     "itemId": "870",
-    "name": "Bronze knife(p)",
+    "name": "青銅小刀(p)",
     "start_graphic": "219,96",
     "darkbow_graphic": "",
     "projectile": "212,40,36,32,32,15,0",
@@ -329,7 +329,7 @@
   },
   {
     "itemId": "871",
-    "name": "Iron knife(p)",
+    "name": "鐵小刀(p)",
     "start_graphic": "220,96",
     "darkbow_graphic": "",
     "projectile": "213,40,36,32,32,15,0",
@@ -337,7 +337,7 @@
   },
   {
     "itemId": "872",
-    "name": "Steel knife(p)",
+    "name": "鋼小刀(p)",
     "start_graphic": "221,96",
     "darkbow_graphic": "",
     "projectile": "214,40,36,32,32,15,0",
@@ -345,7 +345,7 @@
   },
   {
     "itemId": "873",
-    "name": "Mithril knife(p)",
+    "name": "祕銀小刀(p)",
     "start_graphic": "223,96",
     "darkbow_graphic": "",
     "projectile": "216,40,36,32,32,15,0",
@@ -353,7 +353,7 @@
   },
   {
     "itemId": "874",
-    "name": "Black knife(p)",
+    "name": "黑小刀(p)",
     "start_graphic": "222,96",
     "darkbow_graphic": "",
     "projectile": "215,40,36,32,32,15,0",
@@ -361,7 +361,7 @@
   },
   {
     "itemId": "875",
-    "name": "Adamant knife(p)",
+    "name": "精鋼小刀(p)",
     "start_graphic": "224,96",
     "darkbow_graphic": "",
     "projectile": "217,40,36,32,32,15,0",
@@ -369,7 +369,7 @@
   },
   {
     "itemId": "876",
-    "name": "Rune knife(p)",
+    "name": "符文小刀(p)",
     "start_graphic": "225,96",
     "darkbow_graphic": "",
     "projectile": "218,40,36,32,32,15,0",
@@ -377,7 +377,7 @@
   },
   {
     "itemId": "877",
-    "name": "Bronze bolts",
+    "name": "青銅弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -385,7 +385,7 @@
   },
   {
     "itemId": "878",
-    "name": "Bronze bolts(p)",
+    "name": "青銅弩箭(p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -393,7 +393,7 @@
   },
   {
     "itemId": "879",
-    "name": "Opal bolts",
+    "name": "蛋白石弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -401,7 +401,7 @@
   },
   {
     "itemId": "880",
-    "name": "Pearl bolts",
+    "name": "珍珠弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -409,7 +409,7 @@
   },
   {
     "itemId": "882",
-    "name": "Bronze arrow",
+    "name": "青銅箭",
     "start_graphic": "19,96",
     "darkbow_graphic": "1104,96",
     "projectile": "10,40,36,41,46,5,0",
@@ -417,7 +417,7 @@
   },
   {
     "itemId": "883",
-    "name": "Bronze arrow(p)",
+    "name": "青銅箭(p)",
     "start_graphic": "19,96",
     "darkbow_graphic": "1104,96",
     "projectile": "10,40,36,41,46,5,0",
@@ -425,7 +425,7 @@
   },
   {
     "itemId": "884",
-    "name": "Iron arrow",
+    "name": "鐵箭",
     "start_graphic": "18,96",
     "darkbow_graphic": "1105,96",
     "projectile": "9,40,36,41,46,5,0",
@@ -433,7 +433,7 @@
   },
   {
     "itemId": "885",
-    "name": "Iron arrow(p)",
+    "name": "鐵箭(p)",
     "start_graphic": "18,96",
     "darkbow_graphic": "1105,96",
     "projectile": "9,40,36,41,46,5,0",
@@ -441,7 +441,7 @@
   },
   {
     "itemId": "886",
-    "name": "Steel arrow",
+    "name": "鋼箭",
     "start_graphic": "20,96",
     "darkbow_graphic": "1106,96",
     "projectile": "11,40,36,41,46,5,0",
@@ -449,7 +449,7 @@
   },
   {
     "itemId": "887",
-    "name": "Steel arrow(p)",
+    "name": "鋼箭(p)",
     "start_graphic": "20,96",
     "darkbow_graphic": "1106,96",
     "projectile": "11,40,36,41,46,5,0",
@@ -457,7 +457,7 @@
   },
   {
     "itemId": "888",
-    "name": "Mithril arrow",
+    "name": "祕銀箭",
     "start_graphic": "21,96",
     "darkbow_graphic": "1107,96",
     "projectile": "12,40,36,41,46,5,0",
@@ -465,7 +465,7 @@
   },
   {
     "itemId": "889",
-    "name": "Mithril arrow(p)",
+    "name": "祕銀箭(p)",
     "start_graphic": "21,96",
     "darkbow_graphic": "1107,96",
     "projectile": "12,40,36,41,46,5,0",
@@ -473,7 +473,7 @@
   },
   {
     "itemId": "890",
-    "name": "Adamant arrow",
+    "name": "精鋼箭",
     "start_graphic": "22,96",
     "darkbow_graphic": "1108,96",
     "projectile": "13,40,36,41,46,5,0",
@@ -481,7 +481,7 @@
   },
   {
     "itemId": "891",
-    "name": "Adamant arrow(p)",
+    "name": "精鋼箭(p)",
     "start_graphic": "22,96",
     "darkbow_graphic": "1108,96",
     "projectile": "13,40,36,41,46,5,0",
@@ -489,7 +489,7 @@
   },
   {
     "itemId": "892",
-    "name": "Rune arrow",
+    "name": "符文箭",
     "start_graphic": "24,96",
     "darkbow_graphic": "1109,96",
     "projectile": "15,40,36,41,46,5,0",
@@ -497,7 +497,7 @@
   },
   {
     "itemId": "893",
-    "name": "Rune arrow(p)",
+    "name": "符文箭(p)",
     "start_graphic": "24,96",
     "darkbow_graphic": "1109,96",
     "projectile": "15,40,36,41,46,5,0",
@@ -505,7 +505,7 @@
   },
   {
     "itemId": "2532",
-    "name": "Iron fire arrows",
+    "name": "鐵製火箭矢",
     "start_graphic": "26,96",
     "darkbow_graphic": "1113,96",
     "projectile": "17,40,36,41,46,5,0",
@@ -513,7 +513,7 @@
   },
   {
     "itemId": "2534",
-    "name": "Steel fire arrows",
+    "name": "鋼製火箭矢",
     "start_graphic": "26,96",
     "darkbow_graphic": "1113,96",
     "projectile": "17,40,36,41,46,5,0",
@@ -521,7 +521,7 @@
   },
   {
     "itemId": "2536",
-    "name": "Mithril fire arrows",
+    "name": "祕銀火箭矢",
     "start_graphic": "26,96",
     "darkbow_graphic": "1113,96",
     "projectile": "17,40,36,41,46,5,0",
@@ -529,7 +529,7 @@
   },
   {
     "itemId": "2538",
-    "name": "Adamant fire arrows",
+    "name": "精鋼火箭矢",
     "start_graphic": "26,96",
     "darkbow_graphic": "1113,96",
     "projectile": "17,40,36,41,46,5,0",
@@ -537,7 +537,7 @@
   },
   {
     "itemId": "2540",
-    "name": "Rune fire arrows",
+    "name": "符文火箭矢",
     "start_graphic": "26,96",
     "darkbow_graphic": "1113,96",
     "projectile": "17,40,36,41,46,5,0",
@@ -545,7 +545,7 @@
   },
   {
     "itemId": "2866",
-    "name": "Ogre arrow",
+    "name": "食人魔箭",
     "start_graphic": "243,60",
     "darkbow_graphic": "",
     "projectile": "242,40,36,41,46,5,0",
@@ -553,7 +553,7 @@
   },
   {
     "itemId": "3093",
-    "name": "Black dart",
+    "name": "黑色飛鏢",
     "start_graphic": "273,96",
     "darkbow_graphic": "",
     "projectile": "227,40,36,32,32,15,0",
@@ -561,7 +561,7 @@
   },
   {
     "itemId": "3094",
-    "name": "Black dart(p)",
+    "name": "黑色飛鏢(p)",
     "start_graphic": "273,96",
     "darkbow_graphic": "",
     "projectile": "227,40,36,32,32,15,0",
@@ -569,7 +569,7 @@
   },
   {
     "itemId": "4160",
-    "name": "Broad arrow",
+    "name": "寬箭",
     "start_graphic": "325,96",
     "darkbow_graphic": "1112,96",
     "projectile": "326,40,36,41,46,5,0",
@@ -577,7 +577,7 @@
   },
   {
     "itemId": "4212",
-    "name": "New crystal bow",
+    "name": "新水晶弓",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -585,7 +585,7 @@
   },
   {
     "itemId": "4214",
-    "name": "Crystal bow full",
+    "name": "水晶弓（滿）",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -593,7 +593,7 @@
   },
   {
     "itemId": "4215",
-    "name": "Crystal bow 9/10",
+    "name": "水晶弓 9/10",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -601,7 +601,7 @@
   },
   {
     "itemId": "4216",
-    "name": "Crystal bow 8/10",
+    "name": "水晶弓 8/10",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -609,7 +609,7 @@
   },
   {
     "itemId": "4217",
-    "name": "Crystal bow 7/10",
+    "name": "水晶弓 7/10",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -617,7 +617,7 @@
   },
   {
     "itemId": "4218",
-    "name": "Crystal bow 6/10",
+    "name": "水晶弓 6/10",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -625,7 +625,7 @@
   },
   {
     "itemId": "4219",
-    "name": "Crystal bow 5/10",
+    "name": "水晶弓 5/10",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -633,7 +633,7 @@
   },
   {
     "itemId": "4220",
-    "name": "Crystal bow 4/10",
+    "name": "水晶弓 4/10",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -641,7 +641,7 @@
   },
   {
     "itemId": "4221",
-    "name": "Crystal bow 3/10",
+    "name": "水晶弓 3/10",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -649,7 +649,7 @@
   },
   {
     "itemId": "4222",
-    "name": "Crystal bow 2/10",
+    "name": "水晶弓 2/10",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -657,7 +657,7 @@
   },
   {
     "itemId": "4223",
-    "name": "Crystal bow 1/10",
+    "name": "水晶弓 1/10",
     "start_graphic": "250,96",
     "darkbow_graphic": "",
     "projectile": "249,40,36,45,46,5,0",
@@ -665,7 +665,7 @@
   },
   {
     "itemId": "4740",
-    "name": "Bolt rack",
+    "name": "弩箭架",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -673,7 +673,7 @@
   },
   {
     "itemId": "4778",
-    "name": "Iron brutal",
+    "name": "鐵製野蠻人",
     "start_graphic": "18,96",
     "darkbow_graphic": "",
     "projectile": "9,40,36,41,46,5,0",
@@ -681,7 +681,7 @@
   },
   {
     "itemId": "4783",
-    "name": "Steel brutal",
+    "name": "鋼製野蠻人",
     "start_graphic": "20,96",
     "darkbow_graphic": "",
     "projectile": "11,40,36,41,46,5,0",
@@ -689,7 +689,7 @@
   },
   {
     "itemId": "4788",
-    "name": "Black brutal",
+    "name": "黑鐵野蠻人",
     "start_graphic": "18,96",
     "darkbow_graphic": "",
     "projectile": "9,40,36,41,46,5,0",
@@ -697,7 +697,7 @@
   },
   {
     "itemId": "4793",
-    "name": "Mithril brutal",
+    "name": "祕銀野蠻人",
     "start_graphic": "21,96",
     "darkbow_graphic": "",
     "projectile": "12,40,36,41,46,5,0",
@@ -705,7 +705,7 @@
   },
   {
     "itemId": "4798",
-    "name": "Adamant brutal",
+    "name": "祕銀野蠻人",
     "start_graphic": "22,96",
     "darkbow_graphic": "",
     "projectile": "13,40,36,41,46,5,0",
@@ -713,7 +713,7 @@
   },
   {
     "itemId": "4803",
-    "name": "Rune brutal",
+    "name": "符文野蠻人",
     "start_graphic": "24,96",
     "darkbow_graphic": "",
     "projectile": "15,40,36,41,46,5,0",
@@ -721,7 +721,7 @@
   },
   {
     "itemId": "5616",
-    "name": "Bronze arrow(p+)",
+    "name": "青銅箭(p+)",
     "start_graphic": "19,96",
     "darkbow_graphic": "1104,96",
     "projectile": "10,40,36,41,46,5,0",
@@ -729,7 +729,7 @@
   },
   {
     "itemId": "5617",
-    "name": "Iron arrow(p+)",
+    "name": "鐵箭(p+)",
     "start_graphic": "18,96",
     "darkbow_graphic": "1105,96",
     "projectile": "9,40,36,41,46,5,0",
@@ -737,7 +737,7 @@
   },
   {
     "itemId": "5618",
-    "name": "Steel arrow(p+)",
+    "name": "鋼箭(p+)",
     "start_graphic": "20,96",
     "darkbow_graphic": "1106,96",
     "projectile": "11,40,36,41,46,5,0",
@@ -745,7 +745,7 @@
   },
   {
     "itemId": "5619",
-    "name": "Mithril arrow(p+)",
+    "name": "祕銀箭(p+)",
     "start_graphic": "21,96",
     "darkbow_graphic": "1107,96",
     "projectile": "12,40,36,41,46,5,0",
@@ -753,7 +753,7 @@
   },
   {
     "itemId": "5620",
-    "name": "Adamant arrow(p+)",
+    "name": "精鋼箭(p+)",
     "start_graphic": "22,96",
     "darkbow_graphic": "1108,96",
     "projectile": "13,40,36,41,46,5,0",
@@ -761,7 +761,7 @@
   },
   {
     "itemId": "5621",
-    "name": "Rune arrow(p+)",
+    "name": "符文箭(p+)",
     "start_graphic": "19,96",
     "darkbow_graphic": "",
     "projectile": "10,40,36,41,46,5,0",
@@ -769,7 +769,7 @@
   },
   {
     "itemId": "5622",
-    "name": "Bronze arrow(p++)",
+    "name": "青銅箭(p++)",
     "start_graphic": "19,96",
     "darkbow_graphic": "1104,96",
     "projectile": "10,40,36,41,46,5,0",
@@ -777,7 +777,7 @@
   },
   {
     "itemId": "5623",
-    "name": "Iron arrow(p++)",
+    "name": "鐵箭(p++)",
     "start_graphic": "18,96",
     "darkbow_graphic": "1105,96",
     "projectile": "9,40,36,41,46,5,0",
@@ -785,7 +785,7 @@
   },
   {
     "itemId": "5624",
-    "name": "Steel arrow(p++)",
+    "name": "鋼箭(p++)",
     "start_graphic": "20,96",
     "darkbow_graphic": "1106,96",
     "projectile": "11,40,36,41,46,5,0",
@@ -793,7 +793,7 @@
   },
   {
     "itemId": "5625",
-    "name": "Mithril arrow(p++)",
+    "name": "祕銀箭(p++)",
     "start_graphic": "21,96",
     "darkbow_graphic": "1107,96",
     "projectile": "12,40,36,41,46,5,0",
@@ -801,7 +801,7 @@
   },
   {
     "itemId": "5626",
-    "name": "Adamant arrow(p++)",
+    "name": "精鋼箭(p++)",
     "start_graphic": "22,96",
     "darkbow_graphic": "1108,96",
     "projectile": "13,40,36,41,46,5,0",
@@ -809,7 +809,7 @@
   },
   {
     "itemId": "5627",
-    "name": "Rune arrow(p++)",
+    "name": "符文箭(p++)",
     "start_graphic": "24,96",
     "darkbow_graphic": "1109,96",
     "projectile": "15,40,36,41,46,5,0",
@@ -817,7 +817,7 @@
   },
   {
     "itemId": "5628",
-    "name": "Bronze dart(p+)",
+    "name": "青銅飛鏢(p+)",
     "start_graphic": "232,96",
     "darkbow_graphic": "",
     "projectile": "226,40,36,32,32,15,0",
@@ -825,7 +825,7 @@
   },
   {
     "itemId": "5629",
-    "name": "Iron dart(p+)",
+    "name": "鐵飛鏢(p+)",
     "start_graphic": "233,96",
     "darkbow_graphic": "",
     "projectile": "227,40,36,32,32,15,0",
@@ -833,7 +833,7 @@
   },
   {
     "itemId": "5630",
-    "name": "Steel dart(p+)",
+    "name": "鋼飛鏢(p+)",
     "start_graphic": "235,96",
     "darkbow_graphic": "",
     "projectile": "229,40,36,32,32,15,0",
@@ -841,7 +841,7 @@
   },
   {
     "itemId": "5631",
-    "name": "Black dart(p+)",
+    "name": "黑色飛鏢(p+)",
     "start_graphic": "273,96",
     "darkbow_graphic": "",
     "projectile": "227,40,36,32,32,15,0",
@@ -849,7 +849,7 @@
   },
   {
     "itemId": "5633",
-    "name": "Adamant dart(p+)",
+    "name": "精鋼飛鏢(p+)",
     "start_graphic": "236,96",
     "darkbow_graphic": "",
     "projectile": "230,40,36,32,32,15,0",
@@ -857,7 +857,7 @@
   },
   {
     "itemId": "5634",
-    "name": "Rune dart(p+)",
+    "name": "符文飛鏢(p+)",
     "start_graphic": "237,96",
     "darkbow_graphic": "",
     "projectile": "231,40,36,32,32,15,0",
@@ -865,7 +865,7 @@
   },
   {
     "itemId": "5635",
-    "name": "Bronze dart(p++)",
+    "name": "青銅飛鏢(p++)",
     "start_graphic": "232,96",
     "darkbow_graphic": "",
     "projectile": "226,40,36,32,32,15,0",
@@ -873,7 +873,7 @@
   },
   {
     "itemId": "5636",
-    "name": "Iron dart(p++)",
+    "name": "鐵飛鏢(p++)",
     "start_graphic": "233,96",
     "darkbow_graphic": "",
     "projectile": "227,40,36,32,32,15,0",
@@ -881,7 +881,7 @@
   },
   {
     "itemId": "5637",
-    "name": "Steel dart(p++)",
+    "name": "鋼飛鏢(p++)",
     "start_graphic": "234,96",
     "darkbow_graphic": "",
     "projectile": "228,40,36,32,32,15,0",
@@ -889,7 +889,7 @@
   },
   {
     "itemId": "5638",
-    "name": "Black dart(p++)",
+    "name": "黑色飛鏢(p++)",
     "start_graphic": "273,96",
     "darkbow_graphic": "",
     "projectile": "227,40,36,32,32,15,0",
@@ -897,7 +897,7 @@
   },
   {
     "itemId": "5639",
-    "name": "Mithril dart(p++)",
+    "name": "祕銀飛鏢(p++)",
     "start_graphic": "235,96",
     "darkbow_graphic": "",
     "projectile": "229,40,36,32,32,15,0",
@@ -905,7 +905,7 @@
   },
   {
     "itemId": "5640",
-    "name": "Adamant dart(p++)",
+    "name": "精鋼飛鏢(p++)",
     "start_graphic": "236,96",
     "darkbow_graphic": "",
     "projectile": "230,40,36,32,32,15,0",
@@ -913,7 +913,7 @@
   },
   {
     "itemId": "5641",
-    "name": "Rune dart(p++)",
+    "name": "符文飛鏢(p++)",
     "start_graphic": "237,96",
     "darkbow_graphic": "",
     "projectile": "231,40,36,32,32,15,0",
@@ -921,7 +921,7 @@
   },
   {
     "itemId": "5642",
-    "name": "Bronze javelin(p+)",
+    "name": "青銅標槍(p+)",
     "start_graphic": "206,96",
     "darkbow_graphic": "",
     "projectile": "200,40,36,32,32,15,0",
@@ -929,7 +929,7 @@
   },
   {
     "itemId": "5643",
-    "name": "Iron javelin(p+)",
+    "name": "鐵標槍(p+)",
     "start_graphic": "207,96",
     "darkbow_graphic": "",
     "projectile": "201,40,36,32,32,15,0",
@@ -937,7 +937,7 @@
   },
   {
     "itemId": "5644",
-    "name": "Steel javelin(p+)",
+    "name": "鋼標槍(p+)",
     "start_graphic": "208,96",
     "darkbow_graphic": "",
     "projectile": "202,40,36,32,32,15,0",
@@ -945,7 +945,7 @@
   },
   {
     "itemId": "5645",
-    "name": "Mithril javelin(p+)",
+    "name": "祕銀標槍(p+)",
     "start_graphic": "209,96",
     "darkbow_graphic": "",
     "projectile": "203,40,36,32,32,15,0",
@@ -953,7 +953,7 @@
   },
   {
     "itemId": "5646",
-    "name": "Adamant javelin(p+)",
+    "name": "精鋼標槍(p+)",
     "start_graphic": "210,96",
     "darkbow_graphic": "",
     "projectile": "204,40,36,32,32,15,0",
@@ -961,7 +961,7 @@
   },
   {
     "itemId": "5647",
-    "name": "Rune javelin(p+)",
+    "name": "符文標槍(p+)",
     "start_graphic": "211,96",
     "darkbow_graphic": "",
     "projectile": "205,40,36,32,32,15,0",
@@ -969,7 +969,7 @@
   },
   {
     "itemId": "5648",
-    "name": "Bronze jav\\'n(p++)",
+    "name": "青銅投槍(p++)",
     "start_graphic": "206,96",
     "darkbow_graphic": "",
     "projectile": "200,40,36,32,32,15,0",
@@ -977,7 +977,7 @@
   },
   {
     "itemId": "5649",
-    "name": "Iron javelin(p++)",
+    "name": "鐵標槍(p++)",
     "start_graphic": "207,96",
     "darkbow_graphic": "",
     "projectile": "201,40,36,32,32,15,0",
@@ -985,7 +985,7 @@
   },
   {
     "itemId": "5650",
-    "name": "Steel javelin(p++)",
+    "name": "鋼標槍(p++)",
     "start_graphic": "208,96",
     "darkbow_graphic": "",
     "projectile": "202,40,36,32,32,15,0",
@@ -993,7 +993,7 @@
   },
   {
     "itemId": "5651",
-    "name": "Mithril javelin(p++)",
+    "name": "祕銀標槍(p++)",
     "start_graphic": "209,96",
     "darkbow_graphic": "",
     "projectile": "203,40,36,32,32,15,0",
@@ -1001,7 +1001,7 @@
   },
   {
     "itemId": "5652",
-    "name": "Adamant javelin(p++)",
+    "name": "精鋼標槍(p++)",
     "start_graphic": "210,96",
     "darkbow_graphic": "",
     "projectile": "204,40,36,32,32,15,0",
@@ -1009,7 +1009,7 @@
   },
   {
     "itemId": "5653",
-    "name": "Rune javelin(p++)",
+    "name": "符文標槍(p++)",
     "start_graphic": "211,96",
     "darkbow_graphic": "",
     "projectile": "205,40,36,32,32,15,0",
@@ -1017,7 +1017,7 @@
   },
   {
     "itemId": "5654",
-    "name": "Bronze knife(p+)",
+    "name": "青銅小刀(p+)",
     "start_graphic": "219,96",
     "darkbow_graphic": "",
     "projectile": "212,40,36,32,32,15,0",
@@ -1025,7 +1025,7 @@
   },
   {
     "itemId": "5655",
-    "name": "Iron knife(p+)",
+    "name": "鐵小刀(p+)",
     "start_graphic": "220,96",
     "darkbow_graphic": "",
     "projectile": "213,40,36,32,32,15,0",
@@ -1033,7 +1033,7 @@
   },
   {
     "itemId": "5656",
-    "name": "Steel knife(p+)",
+    "name": "鋼小刀(p+)",
     "start_graphic": "221,96",
     "darkbow_graphic": "",
     "projectile": "214,40,36,32,32,15,0",
@@ -1041,7 +1041,7 @@
   },
   {
     "itemId": "5657",
-    "name": "Mithril knife(p+)",
+    "name": "祕銀小刀(p+)",
     "start_graphic": "223,96",
     "darkbow_graphic": "",
     "projectile": "216,40,36,32,32,15,0",
@@ -1049,7 +1049,7 @@
   },
   {
     "itemId": "5658",
-    "name": "Black knife(p+)",
+    "name": "黑小刀(p+)",
     "start_graphic": "222,96",
     "darkbow_graphic": "",
     "projectile": "215,40,36,32,32,15,0",
@@ -1057,7 +1057,7 @@
   },
   {
     "itemId": "5659",
-    "name": "Adamant knife(p+)",
+    "name": "精鋼小刀(p+)",
     "start_graphic": "224,96",
     "darkbow_graphic": "",
     "projectile": "217,40,36,32,32,15,0",
@@ -1065,7 +1065,7 @@
   },
   {
     "itemId": "5660",
-    "name": "Rune knife(p+)",
+    "name": "符文小刀(p+)",
     "start_graphic": "225,96",
     "darkbow_graphic": "",
     "projectile": "218,40,36,32,32,15,0",
@@ -1073,7 +1073,7 @@
   },
   {
     "itemId": "5661",
-    "name": "Bronze knife(p++)",
+    "name": "青銅小刀(p++)",
     "start_graphic": "219,96",
     "darkbow_graphic": "",
     "projectile": "212,40,36,32,32,15,0",
@@ -1081,7 +1081,7 @@
   },
   {
     "itemId": "5662",
-    "name": "Iron knife(p++)",
+    "name": "鐵小刀(p++)",
     "start_graphic": "220,96",
     "darkbow_graphic": "",
     "projectile": "213,40,36,32,32,15,0",
@@ -1089,7 +1089,7 @@
   },
   {
     "itemId": "5663",
-    "name": "Steel knife(p++)",
+    "name": "鋼小刀(p++)",
     "start_graphic": "221,96",
     "darkbow_graphic": "",
     "projectile": "214,40,36,32,32,15,0",
@@ -1097,7 +1097,7 @@
   },
   {
     "itemId": "5664",
-    "name": "Mithril knife(p++)",
+    "name": "祕銀小刀(p++)",
     "start_graphic": "223,96",
     "darkbow_graphic": "",
     "projectile": "216,40,36,32,32,15,0",
@@ -1105,7 +1105,7 @@
   },
   {
     "itemId": "5665",
-    "name": "Black knife(p++)",
+    "name": "黑小刀(p++)",
     "start_graphic": "222,96",
     "darkbow_graphic": "",
     "projectile": "215,40,36,32,32,15,0",
@@ -1113,7 +1113,7 @@
   },
   {
     "itemId": "5666",
-    "name": "Adamant knife(p++)",
+    "name": "精鋼小刀(p++)",
     "start_graphic": "224,96",
     "darkbow_graphic": "",
     "projectile": "217,40,36,32,32,15,0",
@@ -1121,7 +1121,7 @@
   },
   {
     "itemId": "5667",
-    "name": "Rune knife(p++)",
+    "name": "符文小刀(p++)",
     "start_graphic": "225,96",
     "darkbow_graphic": "",
     "projectile": "218,40,36,32,32,15,0",
@@ -1129,7 +1129,7 @@
   },
   {
     "itemId": "6061",
-    "name": "Bronze bolts(p+)",
+    "name": "青銅弩箭(p+)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1137,7 +1137,7 @@
   },
   {
     "itemId": "6062",
-    "name": "Bronze bolts(p++)",
+    "name": "青銅弩箭(p++)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1153,7 +1153,7 @@
   },
   {
     "itemId": "8882",
-    "name": "Bone bolts",
+    "name": "骨頭箭矢",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1161,7 +1161,7 @@
   },
   {
     "itemId": "9139",
-    "name": "Blurite bolts",
+    "name": "藍晶弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1169,7 +1169,7 @@
   },
   {
     "itemId": "9140",
-    "name": "Iron bolts",
+    "name": "鐵弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1177,7 +1177,7 @@
   },
   {
     "itemId": "9141",
-    "name": "Steel bolts",
+    "name": "鋼弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1185,7 +1185,7 @@
   },
   {
     "itemId": "9142",
-    "name": "Mithril bolts",
+    "name": "Mithril 弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1193,7 +1193,7 @@
   },
   {
     "itemId": "9143",
-    "name": "Adamant bolts",
+    "name": "Adamant 弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1201,7 +1201,7 @@
   },
   {
     "itemId": "9144",
-    "name": "Rune bolts",
+    "name": "符文弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1209,7 +1209,7 @@
   },
   {
     "itemId": "9236",
-    "name": "Opal bolts (e)",
+    "name": "蛋白石弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1217,7 +1217,7 @@
   },
   {
     "itemId": "9237",
-    "name": "Jade bolts (e)",
+    "name": "傑德弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1225,7 +1225,7 @@
   },
   {
     "itemId": "9238",
-    "name": "Pearl bolts (e)",
+    "name": "珍珠弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1233,7 +1233,7 @@
   },
   {
     "itemId": "9239",
-    "name": "Topaz bolts (e)",
+    "name": "黃玉弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1241,7 +1241,7 @@
   },
   {
     "itemId": "9240",
-    "name": "Sapphire bolts (e)",
+    "name": "藍寶石弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1249,7 +1249,7 @@
   },
   {
     "itemId": "9241",
-    "name": "Emerald bolts (e)",
+    "name": "祖母綠弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1257,7 +1257,7 @@
   },
   {
     "itemId": "9242",
-    "name": "Ruby bolts (e)",
+    "name": "紅寶石弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1265,7 +1265,7 @@
   },
   {
     "itemId": "9243",
-    "name": "Diamond bolts (e)",
+    "name": "鑽石弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1273,7 +1273,7 @@
   },
   {
     "itemId": "9244",
-    "name": "Dragon bolts (e)",
+    "name": "龍弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1281,7 +1281,7 @@
   },
   {
     "itemId": "9245",
-    "name": "Onyx bolts (e)",
+    "name": "瑪瑙弩箭 (e)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1289,7 +1289,7 @@
   },
   {
     "itemId": "9286",
-    "name": "Blurite bolts(p)",
+    "name": "藍晶弩箭(p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1297,7 +1297,7 @@
   },
   {
     "itemId": "9287",
-    "name": "Iron bolts (p)",
+    "name": "鐵弩箭 (p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1305,7 +1305,7 @@
   },
   {
     "itemId": "9288",
-    "name": "Steel bolts (p)",
+    "name": "鋼弩箭 (p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1313,7 +1313,7 @@
   },
   {
     "itemId": "9289",
-    "name": "Mithril bolts (p)",
+    "name": "Mithril 弩箭 (p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1321,7 +1321,7 @@
   },
   {
     "itemId": "9290",
-    "name": "Adamant bolts (p)",
+    "name": "Adamant 弩箭 (p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1329,7 +1329,7 @@
   },
   {
     "itemId": "9291",
-    "name": "Runite bolts (p)",
+    "name": "Runite 弩箭 (p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1337,7 +1337,7 @@
   },
   {
     "itemId": "9293",
-    "name": "Blurite bolts(p+)",
+    "name": "藍晶弩箭(p+)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1345,7 +1345,7 @@
   },
   {
     "itemId": "9294",
-    "name": "Iron bolts(p+)",
+    "name": "鐵弩箭(p+)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1353,7 +1353,7 @@
   },
   {
     "itemId": "9295",
-    "name": "Steel bolts(p+)",
+    "name": "鋼弩箭(p+)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1361,7 +1361,7 @@
   },
   {
     "itemId": "9296",
-    "name": "Mithril bolts(p+)",
+    "name": "Mithril 弩箭(p+)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1369,7 +1369,7 @@
   },
   {
     "itemId": "9297",
-    "name": "Adamant bolts(p+)",
+    "name": "Adamant 弩箭(p+)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1377,7 +1377,7 @@
   },
   {
     "itemId": "9298",
-    "name": "Runite bolts(p+)",
+    "name": "Runite 弩箭(p+)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1385,7 +1385,7 @@
   },
   {
     "itemId": "9300",
-    "name": "Blurite bolts(p++)",
+    "name": "藍晶弩箭(p++)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1393,7 +1393,7 @@
   },
   {
     "itemId": "9301",
-    "name": "Iron bolts(p++)",
+    "name": "鐵弩箭(p++)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1401,7 +1401,7 @@
   },
   {
     "itemId": "9302",
-    "name": "Steel bolts(p++)",
+    "name": "鋼弩箭(p++)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1409,7 +1409,7 @@
   },
   {
     "itemId": "9303",
-    "name": "Mithril bolts(p++)",
+    "name": "Mithril 弩箭(p++)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1417,7 +1417,7 @@
   },
   {
     "itemId": "9304",
-    "name": "Adamant bolts(p++)",
+    "name": "Adamant 弩箭(p++)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1425,7 +1425,7 @@
   },
   {
     "itemId": "9305",
-    "name": "Runite bolts(p++)",
+    "name": "Runite 弩箭(p++)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1433,7 +1433,7 @@
   },
   {
     "itemId": "9335",
-    "name": "Jade bolts",
+    "name": "傑德弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1441,7 +1441,7 @@
   },
   {
     "itemId": "9336",
-    "name": "Topaz bolts",
+    "name": "黃玉弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1449,7 +1449,7 @@
   },
   {
     "itemId": "9337",
-    "name": "Sapphire bolts",
+    "name": "藍寶石弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1457,7 +1457,7 @@
   },
   {
     "itemId": "9338",
-    "name": "Emerald bolts",
+    "name": "祖母綠弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1465,7 +1465,7 @@
   },
   {
     "itemId": "9339",
-    "name": "Ruby bolts",
+    "name": "紅寶石弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1473,7 +1473,7 @@
   },
   {
     "itemId": "9340",
-    "name": "Diamond bolts",
+    "name": "鑽石弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1481,7 +1481,7 @@
   },
   {
     "itemId": "9341",
-    "name": "Dragon bolts",
+    "name": "龍弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1489,7 +1489,7 @@
   },
   {
     "itemId": "9342",
-    "name": "Onyx bolts",
+    "name": "瑪瑙弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1497,7 +1497,7 @@
   },
   {
     "itemId": "9706",
-    "name": "Training arrows",
+    "name": "訓練用箭",
     "start_graphic": "806,96",
     "darkbow_graphic": "806,96",
     "projectile": "805,40,36,41,46,5,0",
@@ -1505,7 +1505,7 @@
   },
   {
     "itemId": "10033",
-    "name": "Chinchompa",
+    "name": "金奇姆帕",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "908,40,36,45,46,5,0",
@@ -1513,7 +1513,7 @@
   },
   {
     "itemId": "10034",
-    "name": "Red chinchompa",
+    "name": "紅色金奇姆帕",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "909,40,36,45,46,5,0",
@@ -1521,7 +1521,7 @@
   },
   {
     "itemId": "10158",
-    "name": "Kebbit bolts",
+    "name": "凱比特弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1529,7 +1529,7 @@
   },
   {
     "itemId": "10159",
-    "name": "Long kebbit bolts",
+    "name": "長凱比特弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1537,7 +1537,7 @@
   },
   {
     "itemId": "11212",
-    "name": "Dragon arrow",
+    "name": "Dragon arrow 龍箭",
     "start_graphic": "1116,96",
     "darkbow_graphic": "1114,96",
     "projectile": "1120,40,36,41,46,5,0",
@@ -1545,7 +1545,7 @@
   },
   {
     "itemId": "11217",
-    "name": "Dragon fire arrows",
+    "name": "Dragon fire arrows 龍火箭",
     "start_graphic": "26,96",
     "darkbow_graphic": "1113,96",
     "projectile": "17,40,36,41,46,5,0",
@@ -1553,7 +1553,7 @@
   },
   {
     "itemId": "11227",
-    "name": "Dragon arrow(p)",
+    "name": "Dragon arrow(p) 龍箭(p)",
     "start_graphic": "1116,96",
     "darkbow_graphic": "1114,96",
     "projectile": "1120,40,36,41,46,5,0",
@@ -1561,7 +1561,7 @@
   },
   {
     "itemId": "11228",
-    "name": "Dragon arrow(p+)",
+    "name": "Dragon arrow(p+) 龍箭(p+)",
     "start_graphic": "1116,96",
     "darkbow_graphic": "1114,96",
     "projectile": "1120,40,36,41,46,5,0",
@@ -1569,7 +1569,7 @@
   },
   {
     "itemId": "11229",
-    "name": "Dragon arrow(p++)",
+    "name": "Dragon arrow(p++) 龍箭(p++)",
     "start_graphic": "1116,96",
     "darkbow_graphic": "1114,96",
     "projectile": "1120,40,36,41,46,5,0",
@@ -1577,7 +1577,7 @@
   },
   {
     "itemId": "11230",
-    "name": "Dragon dart",
+    "name": "Dragon dart 龍飛鏢",
     "start_graphic": "1123,96",
     "darkbow_graphic": "",
     "projectile": "1122,40,36,32,32,15,0",
@@ -1585,7 +1585,7 @@
   },
   {
     "itemId": "11231",
-    "name": "Dragon dart(p)",
+    "name": "Dragon dart(p) 龍飛鏢(p)",
     "start_graphic": "1123,96",
     "darkbow_graphic": "",
     "projectile": "1122,40,36,32,32,15,0",
@@ -1593,7 +1593,7 @@
   },
   {
     "itemId": "11233",
-    "name": "Dragon dart(p+)",
+    "name": "Dragon dart(p+) 龍飛鏢(p+)",
     "start_graphic": "1123,96",
     "darkbow_graphic": "",
     "projectile": "1122,40,36,32,32,15,0",
@@ -1601,7 +1601,7 @@
   },
   {
     "itemId": "11234",
-    "name": "Dragon dart(p++)",
+    "name": "Dragon dart(p++) 龍飛鏢(p++)",
     "start_graphic": "1123,96",
     "darkbow_graphic": "",
     "projectile": "1122,40,36,32,32,15,0",
@@ -1609,7 +1609,7 @@
   },
   {
     "itemId": "13083",
-    "name": "Black bolts",
+    "name": "Black bolts 黑色弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1617,7 +1617,7 @@
   },
   {
     "itemId": "13084",
-    "name": "Black bolts(p)",
+    "name": "Black bolts(p) 黑色弩箭(p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1625,7 +1625,7 @@
   },
   {
     "itemId": "13085",
-    "name": "Black bolts(p+)",
+    "name": "Black bolts(p+) 黑色弩箭(p+)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1633,7 +1633,7 @@
   },
   {
     "itemId": "13086",
-    "name": "Black bolts(p++)",
+    "name": "Black bolts(p++) 黑色弩箭(p++)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1641,7 +1641,7 @@
   },
   {
     "itemId": "13280",
-    "name": "Broad-tipped bolts",
+    "name": "Broad-tipped bolts 寬尖弩箭",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "27,38,36,41,32,5,0",
@@ -1649,7 +1649,7 @@
   },
   {
     "itemId": "13879",
-    "name": "Morrigan\\'s javelin",
+    "name": "Morrigan's javelin 莫莉根的投槍",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "1837,40,36,32,32,15,0",
@@ -1657,7 +1657,7 @@
   },
   {
     "itemId": "13880",
-    "name": "Morrigan\\'s javelin(p)",
+    "name": "Morrigan's javelin(p) 莫莉根的投槍(p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "1837,40,36,32,32,15,0",
@@ -1665,7 +1665,7 @@
   },
   {
     "itemId": "13881",
-    "name": "Morrigan\\'s javelin(p+)",
+    "name": "Morrigan's javelin(p+) 莫莉根的投槍(p+)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "1837,40,36,32,32,15,0",
@@ -1673,7 +1673,7 @@
   },
   {
     "itemId": "13882",
-    "name": "Morrigan\\'s javelin(p++)",
+    "name": "Morrigan's javelin(p++) 莫莉根的投槍(p++)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "1837,40,36,32,32,15,0",
@@ -1681,7 +1681,7 @@
   },
   {
     "itemId": "13883",
-    "name": "Morrigan\\'s throwing axe",
+    "name": "Morrigan's throwing axe 莫莉根的投擲斧",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "1839,40,36,32,32,15,0",
@@ -1689,7 +1689,7 @@
   },
   {
     "itemId": "13953",
-    "name": "Corrupt morrigan\\'s javelin",
+    "name": "Corrupt morrigan's javelin 墮落莫莉根的投槍",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "1837,40,36,32,32,15,0",
@@ -1697,7 +1697,7 @@
   },
   {
     "itemId": "13954",
-    "name": "C. morrigan\\'s javelin (p)",
+    "name": "C. morrigan's javelin (p) 墮落莫莉根的投槍 (p)",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "1837,40,36,32,32,15,0",
@@ -1705,7 +1705,7 @@
   },
   {
     "itemId": "13955",
-    "name": "C. morrigan\\'s javelin (p+)",
+    "name": "C. morrigan 的投槍 (p+)",
     "start_graphic": "1837,96",
     "darkbow_graphic": "",
     "projectile": "1840,40,36,32,32,15,0",
@@ -1713,7 +1713,7 @@
   },
   {
     "itemId": "13956",
-    "name": "C. morrigan\\'s javelin (p++)",
+    "name": "C. morrigan 的投槍 (p++)",
     "start_graphic": "1837,96",
     "darkbow_graphic": "",
     "projectile": "1840,40,36,32,32,15,0",
@@ -1721,7 +1721,7 @@
   },
   {
     "itemId": "13957",
-    "name": "C. morrigan\\'s throwing axe",
+    "name": "C. morrigan 的投擲斧",
     "start_graphic": "-1,0",
     "darkbow_graphic": "",
     "projectile": "1839,40,36,32,32,15,0",
@@ -1729,7 +1729,7 @@
   },
   {
     "itemId": "14202",
-    "name": "Arrows (class 1)",
+    "name": "箭矢 (等級 1)",
     "start_graphic": "24,96",
     "darkbow_graphic": "1109,96",
     "projectile": "15,40,36,41,46,5,0",
@@ -1737,7 +1737,7 @@
   },
   {
     "itemId": "14203",
-    "name": "Arrows (class 2)",
+    "name": "箭矢 (等級 2)",
     "start_graphic": "24,96",
     "darkbow_graphic": "1109,96",
     "projectile": "15,40,36,41,46,5,0",
@@ -1745,7 +1745,7 @@
   },
   {
     "itemId": "14204",
-    "name": "Arrows (class 3)",
+    "name": "箭矢 (等級 3)",
     "start_graphic": "24,96",
     "darkbow_graphic": "1109,96",
     "projectile": "15,40,36,41,46,5,0",
@@ -1753,7 +1753,7 @@
   },
   {
     "itemId": "14205",
-    "name": "Arrows (class 4)",
+    "name": "箭矢 (等級 4)",
     "start_graphic": "24,96",
     "darkbow_graphic": "1109,96",
     "projectile": "15,40,36,41,46,5,0",
@@ -1761,7 +1761,7 @@
   },
   {
     "itemId": "14206",
-    "name": "Arrows (class 5)",
+    "name": "箭矢 (等級 5)",
     "start_graphic": "24,96",
     "darkbow_graphic": "1109,96",
     "projectile": "15,40,36,41,46,5,0",

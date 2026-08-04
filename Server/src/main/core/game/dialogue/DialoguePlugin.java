@@ -353,7 +353,7 @@ public abstract class DialoguePlugin implements Plugin<Player> {
 	 * @param msg the message for the NPC to say
 	 */
 	public Component npcl(FacialExpression expr, String msg){
-		return npc(expr, splitLines(msg, 54));
+		return npc(expr, splitLines(core.api.Translation.translate(msg), 54));
 	}
 
 	/**
@@ -362,7 +362,7 @@ public abstract class DialoguePlugin implements Plugin<Player> {
 	 * @param msg the message for the player to say
 	 */
 	public Component playerl(FacialExpression expr, String msg){
-		return player(expr, splitLines(msg, 54));
+		return player(expr, splitLines(core.api.Translation.translate(msg), 54));
 	}
 
 	public boolean showTopics(Topic<?>... topics) {

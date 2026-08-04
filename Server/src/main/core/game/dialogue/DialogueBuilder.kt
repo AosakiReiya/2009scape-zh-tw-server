@@ -355,7 +355,7 @@ class DialogueBuilder(var target: DialogueBuilderFile, var clauseIndex: Int = -1
         return this
     }
     fun iteml(item: Int, value: String): DialogueBuilder {
-        return item(item, *splitLines(value))
+        return item(item, *splitLines(core.api.Translation.translate(value)))
     }
     fun line(vararg values: String): DialogueBuilder {
         return manualStage() { df, player, _, _ ->
@@ -364,7 +364,7 @@ class DialogueBuilder(var target: DialogueBuilderFile, var clauseIndex: Int = -1
     }
     fun linel(value: String): DialogueBuilder {
         return manualStage() { df, player, _, _ ->
-            df.interpreter!!.sendDialogue(*splitLines(value))
+            df.interpreter!!.sendDialogue(*splitLines(core.api.Translation.translate(value)))
         }
     }
     fun endWith(f: (DialogueFile, Player) -> Unit) {

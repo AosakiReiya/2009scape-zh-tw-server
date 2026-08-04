@@ -681,7 +681,7 @@ public abstract class Entity extends Node {
 	 * @return {@code True} if successful.
 	 */
 	public boolean sendChat(String string) {
-            return getUpdateMasks().register(EntityFlag.ForceChat, string);
+            return getUpdateMasks().register(EntityFlag.ForceChat, core.api.Translation.translate(string, true));
         }
 
 	/**

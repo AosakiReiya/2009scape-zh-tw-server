@@ -97,12 +97,13 @@ abstract class DialogueLabeller : DialogueFile() {
 
     /** Formats a vararg messages or falls back to message to an array for spread function. */
     private fun formatMessages(messages: Array<out String>?, message: String = ""): Array<out String> {
+        // 先翻譯完整句、後拆行：翻譯表 key 是完整句，拆行後片段查不到（避免顯示英文）
         return if (messages == null || messages.isEmpty()) {
-            splitLines(message)
+            splitLines(core.api.Translation.translate(message))
         } else if (messages.size > 1) {
-            messages
+            messages.map { core.api.Translation.translate(it) }.toTypedArray()
         } else {
-            splitLines(messages[0]) // A single line message is similar to a splitLine returning 1 line.
+            splitLines(core.api.Translation.translate(messages[0])) // A single line message is similar to a splitLine returning 1 line.
         }
     }
 

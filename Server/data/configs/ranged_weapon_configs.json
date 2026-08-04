@@ -1,7 +1,7 @@
 [
   {
     "itemId": "732",
-    "name": "Holy water",
+    "name": "聖水",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "385",
@@ -10,7 +10,7 @@
   },
   {
     "itemId": "767",
-    "name": "Phoenix crossbow",
+    "name": "鳳凰十字弓",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -19,7 +19,7 @@
   },
   {
     "itemId": "800",
-    "name": "Bronze thrownaxe",
+    "name": "青銅投擲斧",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -28,7 +28,7 @@
   },
   {
     "itemId": "801",
-    "name": "Iron thrownaxe",
+    "name": "鐵投擲斧",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -37,7 +37,7 @@
   },
   {
     "itemId": "802",
-    "name": "Steel thrownaxe",
+    "name": "鋼投擲斧",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -46,7 +46,7 @@
   },
   {
     "itemId": "803",
-    "name": "Mithril thrownaxe",
+    "name": "祕銀投擲斧",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -55,7 +55,7 @@
   },
   {
     "itemId": "804",
-    "name": "Adamant thrownaxe",
+    "name": "精鋼投擲斧",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -64,7 +64,7 @@
   },
   {
     "itemId": "805",
-    "name": "Rune thrownaxe",
+    "name": "符文投擲斧",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -73,7 +73,7 @@
   },
   {
     "itemId": "806",
-    "name": "Bronze dart",
+    "name": "青銅飛鏢",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -82,7 +82,7 @@
   },
   {
     "itemId": "807",
-    "name": "Iron dart",
+    "name": "鐵飛鏢",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -91,7 +91,7 @@
   },
   {
     "itemId": "808",
-    "name": "Steel dart",
+    "name": "鋼飛鏢",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -100,7 +100,7 @@
   },
   {
     "itemId": "809",
-    "name": "Mithril dart",
+    "name": "祕銀飛鏢",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -109,7 +109,7 @@
   },
   {
     "itemId": "810",
-    "name": "Adamant dart",
+    "name": "精鋼飛鏢",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -118,7 +118,7 @@
   },
   {
     "itemId": "811",
-    "name": "Rune dart",
+    "name": "符文飛鏢",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -127,7 +127,7 @@
   },
   {
     "itemId": "812",
-    "name": "Bronze dart(p)",
+    "name": "青銅飛鏢(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -136,7 +136,7 @@
   },
   {
     "itemId": "813",
-    "name": "Iron dart(p)",
+    "name": "鐵飛鏢(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -145,7 +145,7 @@
   },
   {
     "itemId": "814",
-    "name": "Steel dart(p)",
+    "name": "鋼飛鏢(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -154,7 +154,7 @@
   },
   {
     "itemId": "815",
-    "name": "Mithril dart(p)",
+    "name": "祕銀飛鏢(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -163,7 +163,7 @@
   },
   {
     "itemId": "816",
-    "name": "Adamant dart(p)",
+    "name": "精鋼飛鏢(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -172,7 +172,7 @@
   },
   {
     "itemId": "817",
-    "name": "Rune dart(p)",
+    "name": "符文飛鏢(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -181,7 +181,7 @@
   },
   {
     "itemId": "825",
-    "name": "Bronze javelin",
+    "name": "青銅標槍",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -190,7 +190,7 @@
   },
   {
     "itemId": "826",
-    "name": "Iron javelin",
+    "name": "鐵標槍",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -199,7 +199,7 @@
   },
   {
     "itemId": "827",
-    "name": "Steel javelin",
+    "name": "鋼標槍",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -208,7 +208,7 @@
   },
   {
     "itemId": "828",
-    "name": "Mithril javelin",
+    "name": "祕銀標槍",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -217,7 +217,7 @@
   },
   {
     "itemId": "829",
-    "name": "Adamant javelin",
+    "name": "精鋼標槍",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -226,7 +226,7 @@
   },
   {
     "itemId": "830",
-    "name": "Rune javelin",
+    "name": "符文標槍",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -235,7 +235,7 @@
   },
   {
     "itemId": "831",
-    "name": "Bronze javelin(p)",
+    "name": "青銅標槍(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -244,7 +244,7 @@
   },
   {
     "itemId": "832",
-    "name": "Iron javelin(p)",
+    "name": "鐵標槍(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -253,7 +253,7 @@
   },
   {
     "itemId": "833",
-    "name": "Steel javelin(p)",
+    "name": "鋼標槍(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -262,7 +262,7 @@
   },
   {
     "itemId": "834",
-    "name": "Mithril javelin(p)",
+    "name": "祕銀標槍(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -271,7 +271,7 @@
   },
   {
     "itemId": "835",
-    "name": "Adamant javelin(p)",
+    "name": "精鋼標槍(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -280,7 +280,7 @@
   },
   {
     "itemId": "836",
-    "name": "Rune javelin(p)",
+    "name": "符文標槍(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -289,7 +289,7 @@
   },
   {
     "itemId": "837",
-    "name": "Crossbow",
+    "name": "十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -298,7 +298,7 @@
   },
   {
     "itemId": "839",
-    "name": "Longbow",
+    "name": "長弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -307,7 +307,7 @@
   },
   {
     "itemId": "841",
-    "name": "Shortbow",
+    "name": "短弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -316,7 +316,7 @@
   },
   {
     "itemId": "843",
-    "name": "Oak shortbow",
+    "name": "橡樹短弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -325,7 +325,7 @@
   },
   {
     "itemId": "845",
-    "name": "Oak longbow",
+    "name": "橡樹長弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -334,7 +334,7 @@
   },
   {
     "itemId": "847",
-    "name": "Willow longbow",
+    "name": "柳樹長弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -343,7 +343,7 @@
   },
   {
     "itemId": "849",
-    "name": "Willow shortbow",
+    "name": "柳樹短弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -352,7 +352,7 @@
   },
   {
     "itemId": "851",
-    "name": "Maple longbow",
+    "name": "楓木長弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -361,7 +361,7 @@
   },
   {
     "itemId": "853",
-    "name": "Maple shortbow",
+    "name": "楓木短弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -370,7 +370,7 @@
   },
   {
     "itemId": "855",
-    "name": "Yew longbow",
+    "name": "紫杉木長弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -379,7 +379,7 @@
   },
   {
     "itemId": "857",
-    "name": "Yew shortbow",
+    "name": "紫杉木短弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -388,7 +388,7 @@
   },
   {
     "itemId": "859",
-    "name": "Magic longbow",
+    "name": "魔法長弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -397,7 +397,7 @@
   },
   {
     "itemId": "861",
-    "name": "Magic shortbow",
+    "name": "魔法短弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -406,7 +406,7 @@
   },
   {
     "itemId": "863",
-    "name": "Iron knife",
+    "name": "鐵小刀",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -415,7 +415,7 @@
   },
   {
     "itemId": "864",
-    "name": "Bronze knife",
+    "name": "青銅小刀",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -424,7 +424,7 @@
   },
   {
     "itemId": "865",
-    "name": "Steel knife",
+    "name": "鋼小刀",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -433,7 +433,7 @@
   },
   {
     "itemId": "866",
-    "name": "Mithril knife",
+    "name": "祕銀小刀",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -442,7 +442,7 @@
   },
   {
     "itemId": "867",
-    "name": "Adamant knife",
+    "name": "精鋼小刀",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -451,7 +451,7 @@
   },
   {
     "itemId": "868",
-    "name": "Rune knife",
+    "name": "符文小刀",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -460,7 +460,7 @@
   },
   {
     "itemId": "869",
-    "name": "Black knife",
+    "name": "黑小刀",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -469,7 +469,7 @@
   },
   {
     "itemId": "870",
-    "name": "Bronze knife(p)",
+    "name": "青銅小刀(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -478,7 +478,7 @@
   },
   {
     "itemId": "871",
-    "name": "Iron knife(p)",
+    "name": "鐵小刀(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -487,7 +487,7 @@
   },
   {
     "itemId": "872",
-    "name": "Steel knife(p)",
+    "name": "鋼小刀(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -496,7 +496,7 @@
   },
   {
     "itemId": "873",
-    "name": "Mithril knife(p)",
+    "name": "祕銀小刀(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -505,7 +505,7 @@
   },
   {
     "itemId": "874",
-    "name": "Black knife(p)",
+    "name": "黑小刀(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -514,7 +514,7 @@
   },
   {
     "itemId": "875",
-    "name": "Adamant knife(p)",
+    "name": "精鋼小刀(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -523,7 +523,7 @@
   },
   {
     "itemId": "876",
-    "name": "Rune knife(p)",
+    "name": "符文小刀(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -532,7 +532,7 @@
   },
   {
     "itemId": "2883",
-    "name": "Ogre bow",
+    "name": "食人魔弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -541,7 +541,7 @@
   },
   {
     "itemId": "3093",
-    "name": "Black dart",
+    "name": "黑色飛鏢",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -550,7 +550,7 @@
   },
   {
     "itemId": "3094",
-    "name": "Black dart(p)",
+    "name": "黑色飛鏢(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -559,7 +559,7 @@
   },
   {
     "itemId": "4212",
-    "name": "New crystal bow",
+    "name": "新水晶弓",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -568,7 +568,7 @@
   },
   {
     "itemId": "4214",
-    "name": "Crystal bow full",
+    "name": "水晶弓（滿）",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -577,7 +577,7 @@
   },
   {
     "itemId": "4215",
-    "name": "Crystal bow 9/10",
+    "name": "水晶弓 9/10",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -586,7 +586,7 @@
   },
   {
     "itemId": "4216",
-    "name": "Crystal bow 8/10",
+    "name": "水晶弓 8/10",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -595,7 +595,7 @@
   },
   {
     "itemId": "4217",
-    "name": "Crystal bow 7/10",
+    "name": "水晶弓 7/10",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -604,7 +604,7 @@
   },
   {
     "itemId": "4218",
-    "name": "Crystal bow 6/10",
+    "name": "水晶弓 6/10",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -613,7 +613,7 @@
   },
   {
     "itemId": "4219",
-    "name": "Crystal bow 5/10",
+    "name": "水晶弓 5/10",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -622,7 +622,7 @@
   },
   {
     "itemId": "4220",
-    "name": "Crystal bow 4/10",
+    "name": "水晶弓 4/10",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -631,7 +631,7 @@
   },
   {
     "itemId": "4221",
-    "name": "Crystal bow 3/10",
+    "name": "水晶弓 3/10",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -640,7 +640,7 @@
   },
   {
     "itemId": "4222",
-    "name": "Crystal bow 2/10",
+    "name": "水晶弓 2/10",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -649,7 +649,7 @@
   },
   {
     "itemId": "4223",
-    "name": "Crystal bow 1/10",
+    "name": "水晶弓 1/10",
     "ammo_slot": "3",
     "weapon_type": "4",
     "animation": "426",
@@ -658,7 +658,7 @@
   },
   {
     "itemId": "4734",
-    "name": "Karil\\'s crossbow",
+    "name": "卡里爾的十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "2075",
@@ -667,7 +667,7 @@
   },
   {
     "itemId": "4827",
-    "name": "Comp ogre bow",
+    "name": "複合食人魔弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -676,7 +676,7 @@
   },
   {
     "itemId": "4934",
-    "name": "Karil\\'s x-bow 100",
+    "name": "卡里爾的十字弩 100",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "2075",
@@ -685,7 +685,7 @@
   },
   {
     "itemId": "4935",
-    "name": "Karil\\'s x-bow 75",
+    "name": "卡里爾的十字弩 75",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "2075",
@@ -694,7 +694,7 @@
   },
   {
     "itemId": "4936",
-    "name": "Karil\\'s x-bow 50",
+    "name": "卡里爾的十字弩 50",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "2075",
@@ -703,7 +703,7 @@
   },
   {
     "itemId": "4937",
-    "name": "Karil\\'s x-bow 25",
+    "name": "卡里爾的十字弩 25",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "2075",
@@ -712,7 +712,7 @@
   },
   {
     "itemId": "5628",
-    "name": "Bronze dart(p+)",
+    "name": "青銅飛鏢(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -721,7 +721,7 @@
   },
   {
     "itemId": "5629",
-    "name": "Iron dart(p+)",
+    "name": "鐵飛鏢(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -730,7 +730,7 @@
   },
   {
     "itemId": "5630",
-    "name": "Steel dart(p+)",
+    "name": "鋼飛鏢(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -739,7 +739,7 @@
   },
   {
     "itemId": "5631",
-    "name": "Black dart(p+)",
+    "name": "黑色飛鏢(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -748,7 +748,7 @@
   },
   {
     "itemId": "5632",
-    "name": "Mithril dart(p+)",
+    "name": "祕銀飛鏢(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -757,7 +757,7 @@
   },
   {
     "itemId": "5633",
-    "name": "Adamant dart(p+)",
+    "name": "精鋼飛鏢(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -766,7 +766,7 @@
   },
   {
     "itemId": "5634",
-    "name": "Rune dart(p+)",
+    "name": "符文飛鏢(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -775,7 +775,7 @@
   },
   {
     "itemId": "5635",
-    "name": "Bronze dart(p++)",
+    "name": "青銅飛鏢(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -784,7 +784,7 @@
   },
   {
     "itemId": "5636",
-    "name": "Iron dart(p++)",
+    "name": "鐵飛鏢(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -793,7 +793,7 @@
   },
   {
     "itemId": "5637",
-    "name": "Steel dart(p++)",
+    "name": "鋼飛鏢(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -802,7 +802,7 @@
   },
   {
     "itemId": "5638",
-    "name": "Black dart(p++)",
+    "name": "黑色飛鏢(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -811,7 +811,7 @@
   },
   {
     "itemId": "5639",
-    "name": "Mithril dart(p++)",
+    "name": "祕銀飛鏢(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -820,7 +820,7 @@
   },
   {
     "itemId": "5640",
-    "name": "Adamant dart(p++)",
+    "name": "精鋼飛鏢(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -829,7 +829,7 @@
   },
   {
     "itemId": "5641",
-    "name": "Rune dart(p++)",
+    "name": "符文飛鏢(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -838,7 +838,7 @@
   },
   {
     "itemId": "5642",
-    "name": "Bronze javelin(p+)",
+    "name": "青銅標槍(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -847,7 +847,7 @@
   },
   {
     "itemId": "5643",
-    "name": "Iron javelin(p+)",
+    "name": "鐵標槍(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -856,7 +856,7 @@
   },
   {
     "itemId": "5644",
-    "name": "Steel javelin(p+)",
+    "name": "鋼標槍(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -865,7 +865,7 @@
   },
   {
     "itemId": "5645",
-    "name": "Mithril javelin(p+)",
+    "name": "祕銀標槍(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -874,7 +874,7 @@
   },
   {
     "itemId": "5646",
-    "name": "Adamant javelin(p+)",
+    "name": "精鋼標槍(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -883,7 +883,7 @@
   },
   {
     "itemId": "5647",
-    "name": "Rune javelin(p+)",
+    "name": "符文標槍(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -892,7 +892,7 @@
   },
   {
     "itemId": "5648",
-    "name": "Bronze jav\\'n(p++)",
+    "name": "青銅投槍(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -901,7 +901,7 @@
   },
   {
     "itemId": "5649",
-    "name": "Iron javelin(p++)",
+    "name": "鐵標槍(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -910,7 +910,7 @@
   },
   {
     "itemId": "5650",
-    "name": "Steel javelin(p++)",
+    "name": "鋼標槍(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -919,7 +919,7 @@
   },
   {
     "itemId": "5651",
-    "name": "Mithril javelin(p++)",
+    "name": "祕銀標槍(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -928,7 +928,7 @@
   },
   {
     "itemId": "5652",
-    "name": "Adamant javelin(p++)",
+    "name": "精鋼標槍(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -937,7 +937,7 @@
   },
   {
     "itemId": "5653",
-    "name": "Rune javelin(p++)",
+    "name": "符文標槍(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -946,7 +946,7 @@
   },
   {
     "itemId": "5654",
-    "name": "Bronze knife(p+)",
+    "name": "青銅小刀(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -955,7 +955,7 @@
   },
   {
     "itemId": "5655",
-    "name": "Iron knife(p+)",
+    "name": "鐵小刀(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -964,7 +964,7 @@
   },
   {
     "itemId": "5656",
-    "name": "Steel knife(p+)",
+    "name": "鋼小刀(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -973,7 +973,7 @@
   },
   {
     "itemId": "5657",
-    "name": "Mithril knife(p+)",
+    "name": "祕銀小刀(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -982,7 +982,7 @@
   },
   {
     "itemId": "5658",
-    "name": "Black knife(p+)",
+    "name": "黑小刀(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -991,7 +991,7 @@
   },
   {
     "itemId": "5659",
-    "name": "Adamant knife(p+)",
+    "name": "精鋼小刀(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -1000,7 +1000,7 @@
   },
   {
     "itemId": "5660",
-    "name": "Rune knife(p+)",
+    "name": "符文小刀(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -1009,7 +1009,7 @@
   },
   {
     "itemId": "5661",
-    "name": "Bronze knife(p++)",
+    "name": "青銅小刀(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -1018,7 +1018,7 @@
   },
   {
     "itemId": "5662",
-    "name": "Iron knife(p++)",
+    "name": "鐵小刀(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -1027,7 +1027,7 @@
   },
   {
     "itemId": "5663",
-    "name": "Steel knife(p++)",
+    "name": "鋼小刀(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -1036,7 +1036,7 @@
   },
   {
     "itemId": "5664",
-    "name": "Mithril knife(p++)",
+    "name": "祕銀小刀(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -1045,7 +1045,7 @@
   },
   {
     "itemId": "5665",
-    "name": "Black knife(p++)",
+    "name": "黑小刀(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -1054,7 +1054,7 @@
   },
   {
     "itemId": "5666",
-    "name": "Adamant knife(p++)",
+    "name": "精鋼小刀(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -1063,7 +1063,7 @@
   },
   {
     "itemId": "5667",
-    "name": "Rune knife(p++)",
+    "name": "符文小刀(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "929",
@@ -1081,7 +1081,7 @@
   },
   {
     "itemId": "6724",
-    "name": "Seercull",
+    "name": "先知之石",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1090,7 +1090,7 @@
   },
   {
     "itemId": "8880",
-    "name": "Dorgeshuun c\\'bow",
+    "name": "多吉舒恩十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1099,7 +1099,7 @@
   },
   {
     "itemId": "9174",
-    "name": "Bronze crossbow",
+    "name": "青銅十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1108,7 +1108,7 @@
   },
   {
     "itemId": "9176",
-    "name": "Blurite crossbow",
+    "name": "藍光石十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1117,7 +1117,7 @@
   },
   {
     "itemId": "9177",
-    "name": "Iron crossbow",
+    "name": "鐵十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1126,7 +1126,7 @@
   },
   {
     "itemId": "9179",
-    "name": "Steel crossbow",
+    "name": "精鋼十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1135,7 +1135,7 @@
   },
   {
     "itemId": "9181",
-    "name": "Mith crossbow",
+    "name": "祕銀十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1144,7 +1144,7 @@
   },
   {
     "itemId": "9183",
-    "name": "Adamant crossbow",
+    "name": "Adamant 十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1153,7 +1153,7 @@
   },
   {
     "itemId": "9185",
-    "name": "Rune crossbow",
+    "name": "符文十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1162,7 +1162,7 @@
   },
   {
     "itemId": "9705",
-    "name": "Training bow",
+    "name": "訓練用弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1171,7 +1171,7 @@
   },
   {
     "itemId": "10033",
-    "name": "Chinchompa",
+    "name": "金奇姆帕",
     "ammo_slot": "3",
     "weapon_type": "6",
     "animation": "2779",
@@ -1180,7 +1180,7 @@
   },
   {
     "itemId": "10034",
-    "name": "Red chinchompa",
+    "name": "紅色金奇姆帕",
     "ammo_slot": "3",
     "weapon_type": "6",
     "animation": "2779",
@@ -1189,7 +1189,7 @@
   },
   {
     "itemId": "10156",
-    "name": "Hunters\\' crossbow",
+    "name": "狩獵者的十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1198,7 +1198,7 @@
   },
   {
     "itemId": "10280",
-    "name": "Willow comp bow",
+    "name": "柳樹複合弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1207,7 +1207,7 @@
   },
   {
     "itemId": "10282",
-    "name": "Yew comp bow",
+    "name": "紫杉木複合弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1216,7 +1216,7 @@
   },
   {
     "itemId": "10284",
-    "name": "Magic comp bow",
+    "name": "魔法複合弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1225,7 +1225,7 @@
   },
   {
     "itemId": "11165",
-    "name": "Phoenix crossbow",
+    "name": "鳳凰十字弓",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1234,7 +1234,7 @@
   },
   {
     "itemId": "11167",
-    "name": "Phoenix crossbow",
+    "name": "鳳凰十字弓",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1243,7 +1243,7 @@
   },
   {
     "itemId": "11230",
-    "name": "Dragon dart",
+    "name": "Dragon dart 龍飛鏢",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -1252,7 +1252,7 @@
   },
   {
     "itemId": "11231",
-    "name": "Dragon dart(p)",
+    "name": "Dragon dart(p) 龍飛鏢(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -1261,7 +1261,7 @@
   },
   {
     "itemId": "11233",
-    "name": "Dragon dart(p+)",
+    "name": "Dragon dart(p+) 龍飛鏢(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -1270,7 +1270,7 @@
   },
   {
     "itemId": "11234",
-    "name": "Dragon dart(p++)",
+    "name": "Dragon dart(p++) 龍飛鏢(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "6600",
@@ -1279,7 +1279,7 @@
   },
   {
     "itemId": "11235",
-    "name": "Dark bow",
+    "name": "暗黑弓",
     "ammo_slot": "13",
     "weapon_type": "2",
     "animation": "426",
@@ -1288,7 +1288,7 @@
   },
   {
     "itemId": "13081",
-    "name": "Black crossbow",
+    "name": "黑色十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1297,7 +1297,7 @@
   },
   {
     "itemId": "13405",
-    "name": "Dark bow",
+    "name": "暗黑弓",
     "ammo_slot": "13",
     "weapon_type": "2",
     "animation": "426",
@@ -1306,7 +1306,7 @@
   },
   {
     "itemId": "13523",
-    "name": "Maple longbow",
+    "name": "楓木長弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1315,7 +1315,7 @@
   },
   {
     "itemId": "13524",
-    "name": "Maple shortbow",
+    "name": "楓木短弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1324,7 +1324,7 @@
   },
   {
     "itemId": "13525",
-    "name": "Yew longbow",
+    "name": "紫杉木長弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1333,7 +1333,7 @@
   },
   {
     "itemId": "13526",
-    "name": "Yew shortbow",
+    "name": "紫杉木短弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1342,7 +1342,7 @@
   },
   {
     "itemId": "13527",
-    "name": "Magic longbow",
+    "name": "魔法長弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1351,7 +1351,7 @@
   },
   {
     "itemId": "13528",
-    "name": "Magic shortbow",
+    "name": "魔法短弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1360,7 +1360,7 @@
   },
   {
     "itemId": "13529",
-    "name": "Seercull",
+    "name": "先知之石",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1369,7 +1369,7 @@
   },
   {
     "itemId": "13530",
-    "name": "Rune crossbow",
+    "name": "符文十字弩",
     "ammo_slot": "13",
     "weapon_type": "1",
     "animation": "4230",
@@ -1378,7 +1378,7 @@
   },
   {
     "itemId": "13541",
-    "name": "Willow comp bow",
+    "name": "柳樹複合弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1387,7 +1387,7 @@
   },
   {
     "itemId": "13542",
-    "name": "Yew comp bow",
+    "name": "紫杉木複合弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1396,7 +1396,7 @@
   },
   {
     "itemId": "13543",
-    "name": "Magic comp bow",
+    "name": "魔法複合弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1405,7 +1405,7 @@
   },
   {
     "itemId": "13879",
-    "name": "Morrigan\\'s javelin",
+    "name": "Morrigan's javelin 莫莉根的投槍",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10501",
@@ -1414,7 +1414,7 @@
   },
   {
     "itemId": "13880",
-    "name": "Morrigan\\'s javelin(p)",
+    "name": "Morrigan's javelin(p) 莫莉根的投槍(p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10501",
@@ -1423,7 +1423,7 @@
   },
   {
     "itemId": "13881",
-    "name": "Morrigan\\'s javelin(p+)",
+    "name": "Morrigan's javelin(p+) 莫莉根的投槍(p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10501",
@@ -1432,7 +1432,7 @@
   },
   {
     "itemId": "13882",
-    "name": "Morrigan\\'s javelin(p++)",
+    "name": "Morrigan's javelin(p++) 莫莉根的投槍(p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10501",
@@ -1441,7 +1441,7 @@
   },
   {
     "itemId": "13883",
-    "name": "Morrigan\\'s throwing axe",
+    "name": "Morrigan's throwing axe 莫莉根的投擲斧",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10504",
@@ -1450,7 +1450,7 @@
   },
   {
     "itemId": "13953",
-    "name": "Corrupt morrigan\\'s javelin",
+    "name": "Corrupt morrigan's javelin 墮落莫莉根的投槍",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10501",
@@ -1459,7 +1459,7 @@
   },
   {
     "itemId": "13954",
-    "name": "C. morrigan\\'s javelin (p)",
+    "name": "C. morrigan's javelin (p) 墮落莫莉根的投槍 (p)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10501",
@@ -1468,7 +1468,7 @@
   },
   {
     "itemId": "13955",
-    "name": "C. morrigan\\'s javelin (p+)",
+    "name": "C. morrigan 的投槍 (p+)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10501",
@@ -1477,7 +1477,7 @@
   },
   {
     "itemId": "13956",
-    "name": "C. morrigan\\'s javelin (p++)",
+    "name": "C. morrigan 的投槍 (p++)",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10501",
@@ -1486,7 +1486,7 @@
   },
   {
     "itemId": "13957",
-    "name": "C. morrigan\\'s throwing axe",
+    "name": "C. morrigan 的投擲斧",
     "ammo_slot": "3",
     "weapon_type": "3",
     "animation": "10504",
@@ -1495,7 +1495,7 @@
   },
   {
     "itemId": "14121",
-    "name": "Sacred clay bow",
+    "name": "神聖黏土弓",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1504,7 +1504,7 @@
   },
   {
     "itemId": "14192",
-    "name": "Bow (class 1)",
+    "name": "弓 (等級 1)",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1513,7 +1513,7 @@
   },
   {
     "itemId": "14194",
-    "name": "Bow (class 2)",
+    "name": "弓 (等級 2)",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1522,7 +1522,7 @@
   },
   {
     "itemId": "14196",
-    "name": "Bow (class 3)",
+    "name": "弓 (等級 3)",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1531,7 +1531,7 @@
   },
   {
     "itemId": "14198",
-    "name": "Bow (class 4)",
+    "name": "弓 (等級 4)",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1540,7 +1540,7 @@
   },
   {
     "itemId": "14200",
-    "name": "Bow (class 5)",
+    "name": "弓 (等級 5)",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "426",
@@ -1549,7 +1549,7 @@
   },
   {
     "itemId": "10149",
-    "name": "Swamp lizard",
+    "name": "沼澤蜥蜴",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "5247",
@@ -1558,7 +1558,7 @@
   },
   {
     "itemId": "10146",
-    "name": "Orange salamander",
+    "name": "橙色蠑螈",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "5247",
@@ -1567,7 +1567,7 @@
   },
   {
     "itemId": "10147",
-    "name": "Red salamander",
+    "name": "紅色蠑螈",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "5247",
@@ -1576,7 +1576,7 @@
   },
   {
     "itemId": "10148",
-    "name": "Black salamander",
+    "name": "黑色蠑螈",
     "ammo_slot": "13",
     "weapon_type": "0",
     "animation": "5247",
