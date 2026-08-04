@@ -30,10 +30,10 @@ sealed class PlayerFlags530 (p: Int, o: Int, f: EntityFlag) : EFlagProvider (530
             val chatBuf = ByteArray(256)
             val encodedText = context.text.toByteArray(StandardCharsets.UTF_8)
             chatBuf[0] = encodedText.size.toByte()
-            // 改為 UTF-8 明文廣播（與客戶端 WordPack 解碼對應），支援中文聊天
+            // 聊天訊息以 UTF-8 明文廣播（與客戶端 method4350 對應），支援中文。
             System.arraycopy(encodedText, 0, chatBuf, 1, encodedText.size)
             val offset = 1 + encodedText.size
-            buffer.p1 (offset)
+            buffer.p1 (offset + 1)
             buffer.putReverse (chatBuf, 0, offset)
         }
     }
