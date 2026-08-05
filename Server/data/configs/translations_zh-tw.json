@@ -62997,5 +62997,18 @@
   "Defence: +$bonus%": "防禦： +$bonus%",
   "News: ": "新聞： ",
   "News:": "新聞：",
-  "Hitpoints: $hp%/$max%": "生命值：$hp%/$max%"
+  "Hitpoints: $hp%/$max%": "生命值：$hp%/$max%",
+  "Items you will lose on death (if not skullled):": "死亡時你將失去的物品（若未標記骷髏頭）：",
+  "Max items kept on death:": "死亡時最多保留物品數：",
+  "Items kept on death": "死亡時保留的物品",
+  "Protected items": "受保護的物品",
+  "Skulled": "已標記骷髏頭",
+  "Not skulled": "未標記骷髏頭",
+  "White Knight's Castle in Falador.": "法魯多的白騎士城堡。",
+  "I would have an advantage if I could fight Level 33 Knights and if I had a smithing level of 26.": "如果我能對抗 33 級騎士並且擁有 26 級鍛造等級，我會佔有優勢。",
+  "If you see red 'hitsplats' during combat, the number shown corresponds to the number of Hitpoints lost as a result of that strike.": "如果在戰鬥中看到紅色的「傷害數字」，顯示的數字對應於該次攻擊所損失的生命值。",
+  "Blue hitsplats mean no damage has been dealt.": "藍色傷害數字表示未造成任何傷害。",
+  "Green hitsplats are poison damage (members).": "綠色傷害數字是毒素傷害（會員）。",
+  "Yellow hitsplats are disease damage (members).": "黃色傷害數字是疾病傷害（會員）。",
+  "Members Only": "僅限會員"
 }
