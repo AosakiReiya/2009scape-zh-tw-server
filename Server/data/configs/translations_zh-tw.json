@@ -62982,5 +62982,20 @@
   "Members:": "會員專屬：",
   "Members only": "僅限會員",
   "Members only.": "僅限會員。",
-  "Member:": "會員："
+  "Member:": "會員：",
+  "Stab: +$bonus%": "刺擊： +$bonus%",
+  "Slash: +$bonus%": "揮砍： +$bonus%",
+  "Crush: +$bonus%": "粉碎： +$bonus%",
+  "Magic: +$bonus%": "魔法： +$bonus%",
+  "Ranged: +$bonus%": "遠程： +$bonus%",
+  "Range: +$bonus%": "遠程： +$bonus%",
+  "Summoning: +$bonus%": "召喚： +$bonus%",
+  "Prayer: +$bonus%": "祈禱： +$bonus%",
+  "Strength: +$bonus%": "力量： +$bonus%",
+  "Melee: +$bonus%": "近戰： +$bonus%",
+  "Attack: +$bonus%": "攻擊： +$bonus%",
+  "Defence: +$bonus%": "防禦： +$bonus%",
+  "News: ": "新聞： ",
+  "News:": "新聞：",
+  "Hitpoints: $hp%/$max%": "生命值：$hp%/$max%"
 }
