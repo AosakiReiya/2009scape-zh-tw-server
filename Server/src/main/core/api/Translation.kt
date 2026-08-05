@@ -188,9 +188,38 @@ object Translation {
         matchTemplate(text)?.let { return it }
         // 中段數值變數匹配（如執行期 "45% Done" 對應表內 "$percent% Done"）
         matchNumberTemplate(text)?.let { return it }
+        // 任務指南組合句（"Completion of X"、"A total of N Quest Points."）
+        translateComposed(text)?.let { return it }
         // 整句 miss → 拆 token 逐一查表回填（解決執行期拼接如 "Lumbridge Area Tasks"）
         translateTokenFallback(text)?.let { return it }
         return text
+    }
+
+    /** 任務指南組合句處理。 */
+    private fun translateComposed(text: String): String? {
+        // "Completion of X" → "完成 X"
+        if (text.startsWith("Completion of ")) {
+            val rest = text.substring("Completion of ".length).trim()
+            val zh = translate(rest, false)
+            if (zh != rest) return "完成 " + zh
+            return null
+        }
+        // "A total of 5 Quest Points." / "5 Quest Points." → "總共需要 5 點任務點數。"
+        if (text.endsWith(" Quest Points.") || text.endsWith(" Quest Points")) {
+            val m2 = NUMBER_PATTERN.matcher(text)
+            if (m2.find()) {
+                val num = m2.group()
+                val prefix = text.substring(0, m2.start()).trim()
+                val zhPrefix = when {
+                    prefix.isEmpty() -> ""
+                    prefix == "A total of" -> "總共需要 "
+                    else -> (translations[prefix] ?: translations[prefix.capitalize()] ?: "") + " "
+                }
+                val suffix = if (text.endsWith(".")) "。" else ""
+                return zhPrefix + num + " 點任務點數" + suffix
+            }
+        }
+        return null
     }
 
     /** 整句查不到時，依空白拆 token 逐一查表回填。僅當所有文字 token 全數命中才套用（避免中英混雜）。 */
