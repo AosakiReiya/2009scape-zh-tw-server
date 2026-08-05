@@ -197,6 +197,12 @@ object Translation {
 
     /** 任務指南組合句處理。 */
     private fun translateComposed(text: String): String? {
+        // 先剝除前綴標籤（<red>/<str>/<col=..>），組合句另外處理標籤回填
+        val cleanText = TAG_PATTERN.matcher(text).replaceAll("")
+        return translateComposedCore(cleanText)
+    }
+
+    private fun translateComposedCore(text: String): String? {
         // "Friends List - <server> <world>" → "好友清單 - <server> <world>"
         if (text.startsWith("Friends List - ")) {
             return "好友清單 - " + text.substring("Friends List - ".length)
@@ -223,10 +229,24 @@ object Translation {
                 return zhPrefix + num + " 點任務點數" + suffix
             }
         }
+        // "I must have completed X." / "I must have completed X" → "我必須先完成 X。"
+        val mc = Regex("^I must have completed (.+?)\\.?$").find(text)
+        if (mc != null) {
+            val cn = mc.groupValues[1]
+            val zh = translate(cn, false)
+            if (zh != cn) return "我必須先完成 " + zh + (if (text.endsWith(".")) "。" else "")
+            return null
+        }
+        // "Level 30 Ranged" / "Level N Skill" → "等級 N ＜技能＞"
+        val lc = Regex("^Level (\\d+) ([A-Za-z ]+)\\.?$").find(text)
+        if (lc != null) {
+            val skill = lc.groupValues[2]
+            val zhSkill = translate(skill, false)
+            if (zhSkill != skill) return "等級 " + lc.groupValues[1] + " " + zhSkill
+            return null
+        }
         return null
     }
-
-    /** 整句查不到時，依空白拆 token 逐一查表回填。僅當所有文字 token 全數命中才套用（避免中英混雜）。 */
     private fun translateTokenFallback(text: String): String? {
         if (text.isBlank() || !text.contains(" ")) return null
         val words = text.split(" ")
