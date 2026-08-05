@@ -1755,7 +1755,7 @@ fun <T> removeAll(player: Player, item: T, container: Container = Container.INVE
  * @param child the index of the child to send the string to
  */
 fun setInterfaceText(player: Player, string: String, iface: Int, child: Int) {
-    player.packetDispatch.sendString(string, iface, child)
+    player.packetDispatch.sendString(core.api.Translation.translate(string), iface, child)
 }
 
 /**

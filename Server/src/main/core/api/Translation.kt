@@ -197,6 +197,10 @@ object Translation {
 
     /** 任務指南組合句處理。 */
     private fun translateComposed(text: String): String? {
+        // "Friends List - <server> <world>" → "好友清單 - <server> <world>"
+        if (text.startsWith("Friends List - ")) {
+            return "好友清單 - " + text.substring("Friends List - ".length)
+        }
         // "Completion of X" → "完成 X"
         if (text.startsWith("Completion of ")) {
             val rest = text.substring("Completion of ".length).trim()
@@ -299,6 +303,44 @@ object Translation {
         "Granite maul" to "花崗岩大錘",
         "Tzaar-Ket-Om" to "茲哈爾-凱特-奧姆",
         "Level 33 Knights" to "33 級騎士",
+        "Romeo" to "羅密歐",
+        "Juliet" to "茱麗葉",
+        "Fred the Farmer" to "農夫佛雷德",
+        "Reldo" to "雷爾多",
+        "Aubury" to "奧伯里",
+        "Gertrude" to "葛特魯德",
+        "Thurgo" to "瑟戈",
+        "Zaff" to "扎夫",
+        "Wayne" to "韋恩",
+        "Aggie" to "艾姬",
+        "Evil Dave" to "邪惡的戴夫",
+        "Squire Asgarnia" to "侍從阿斯加尼亞",
+        "Sir Vyvin" to "維文爵士",
+        "Ernest" to "歐尼斯",
+        "Veronica" to "薇若妮卡",
+        "Marjory" to "瑪喬莉",
+        "Wizard Distentor" to "法師迪斯騰特",
+        "Captain Tobias" to "托比亞斯船長",
+        "Lumbridge Swamp" to "倫布里奇沼澤",
+        "Varrock Palace" to "瓦洛克宮殿",
+        "Imcando Dwarves" to "英曼卡多矮人",
+        "Animal Magnetism" to "動物磁鐵",
+        "Sheep Shearer" to "綿羊剪毛工",
+        "Cook's Assistant" to "廚師的助手",
+        "Black Knights' Fortress" to "黑騎士要塞",
+        "Dragon Slayer" to "龍獵殺",
+        "Vampire Slayer" to "吸血鬼獵殺者",
+        "Prince Ali Rescue" to "營救阿里王子",
+        "Goblin Diplomacy" to "哥布林外交",
+        "The Restless Ghost" to "不安的幽靈",
+        "Romeo & Juliet" to "羅密歐與朱麗葉",
+        "Witch's Potion" to "女巫的藥水",
+        "Shield of Arrav" to "阿拉夫之盾",
+        "Imp Catcher" to "小惡魔捕捉者",
+        "Pirate's Treasure" to "海盜的寶藏",
+        "Rune Mysteries" to "符文之謎",
+        "Doric's Quest" to "多里克的任務",
+        "Ernest the Chicken" to "歐尼斯與雞",
         "Quest Points" to "任務點數",
     )
 
