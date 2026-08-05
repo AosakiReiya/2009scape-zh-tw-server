@@ -193,27 +193,23 @@ object Translation {
         return text
     }
 
-    /** 整句查不到時，依空白拆 token 逐一查表回填（保留未命中片段）。 */
+    /** 整句查不到時，依空白拆 token 逐一查表回填。僅當所有文字 token 全數命中才套用（避免中英混雜）。 */
     private fun translateTokenFallback(text: String): String? {
-        if (text.contains(" ")) {
-            val words = text.split(" ")
-            if (words.size >= 2) {
-                val sb = StringBuilder()
-                var changed = false
-                for (w in words) {
-                    if (sb.isNotEmpty()) sb.append(" ")
-                    val zh = translations[w]
-                    if (zh != null && zh != w) {
-                        sb.append(zh)
-                        changed = true
-                    } else {
-                        sb.append(w)
-                    }
-                }
-                if (changed) return sb.toString()
+        if (text.isBlank() || !text.contains(" ")) return null
+        val words = text.split(" ")
+        if (words.size < 2) return null
+        val sb = StringBuilder()
+        var allTranslated = true
+        for (w in words) {
+            if (sb.isNotEmpty()) sb.append(" ")
+            val tw = if (w.isNotEmpty()) lookupSingle(w) else w
+            sb.append(tw)
+            // 純標點/數字 token 不需翻譯；含英文字母且未命中 → 失敗
+            if (tw == w && w.any { it.isLetter() }) {
+                allTranslated = false
             }
         }
-        return null
+        return if (allTranslated) sb.toString() else null
     }
 
     /** 重點名清單：英文名 -> 中文名（對話中嵌入時顯示「中文 (英文)」）。 */
