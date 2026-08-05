@@ -188,7 +188,32 @@ object Translation {
         matchTemplate(text)?.let { return it }
         // 中段數值變數匹配（如執行期 "45% Done" 對應表內 "$percent% Done"）
         matchNumberTemplate(text)?.let { return it }
+        // 整句 miss → 拆 token 逐一查表回填（解決執行期拼接如 "Lumbridge Area Tasks"）
+        translateTokenFallback(text)?.let { return it }
         return text
+    }
+
+    /** 整句查不到時，依空白拆 token 逐一查表回填（保留未命中片段）。 */
+    private fun translateTokenFallback(text: String): String? {
+        if (text.contains(" ")) {
+            val words = text.split(" ")
+            if (words.size >= 2) {
+                val sb = StringBuilder()
+                var changed = false
+                for (w in words) {
+                    if (sb.isNotEmpty()) sb.append(" ")
+                    val zh = translations[w]
+                    if (zh != null && zh != w) {
+                        sb.append(zh)
+                        changed = true
+                    } else {
+                        sb.append(w)
+                    }
+                }
+                if (changed) return sb.toString()
+            }
+        }
+        return null
     }
 
     /** 重點名清單：英文名 -> 中文名（對話中嵌入時顯示「中文 (英文)」）。 */
