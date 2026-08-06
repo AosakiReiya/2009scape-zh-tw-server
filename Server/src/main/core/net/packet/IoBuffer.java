@@ -783,7 +783,15 @@ public class IoBuffer {
 	public String getJagString() {
 		byte b = buf.get();
 		if (b == 0) return "";
-		return ((char) b) + ByteBufferUtils.getString(buf);
+		// 第一個 byte 併回，整串以 UTF-8 解碼（避免首字節被當 Latin-1 造成中文首字亂碼/方框）
+		java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+		out.write(b);
+		while (true) {
+			byte c = buf.get();
+			if (c == 0) break;
+			out.write(c);
+		}
+		return new String(out.toByteArray(), java.nio.charset.StandardCharsets.UTF_8);
 	}
 
 	/**

@@ -382,7 +382,7 @@ object Translation {
     }
 
     /** 數字佔位模式：`$percent%`、`$number%` 等 `$xxx%` 變數。 */
-    private val NUMBER_VAR_PATTERN = Pattern.compile("\\\$[A-Za-z_]+%")
+    private val NUMBER_VAR_PATTERN = Pattern.compile("\\\$[A-Za-z_]+%?")
 
     /** 執行期字串中的數字（含小數與百分號後綴，如 45%、25）。 */
     private val NUMBER_PATTERN = Pattern.compile("\\d+(\\.\\d+)?%?")
