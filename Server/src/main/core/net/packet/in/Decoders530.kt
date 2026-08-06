@@ -526,7 +526,12 @@ enum class Decoders530(val opcode: Int) {
     PRIVATE_MESSAGE(201) {
         override fun decode(player: Player, buffer: IoBuffer): Packet {
             val name = StringUtils.longToString(buffer.long)
-            val message = StringUtils.decryptPlayerChat(buffer, buffer.get() and 0xFF)
+            // 私訊以 UTF-8 明文傳輸（客戶端 WordPack.encode 不壓縮），
+            // 逐 byte 讀取後以 UTF-8 解碼，支援中文（與 CHAT_MESSAGE 一致）。
+            val numChars = buffer.smart
+            val raw = ByteArray(numChars)
+            for (i in 0 until numChars) raw[i] = buffer.get().toByte()
+            val message = String(raw, StandardCharsets.UTF_8)
             return Packet.PrivateMessage(player, name, message)
         }
     },
