@@ -11,12 +11,15 @@ object ByteBufferUtils {
      */
 	@JvmStatic
 	fun getString(buffer: ByteBuffer): String {
-        val sb = StringBuilder()
-        var b: Byte
-        while (buffer.get().also { b = it }.toInt() != 0) {
-            sb.append(Char(b.toUShort()))
+        // cache 字串為中文 UTF-8 明文（與 putString 的 UTF-8 對稱）。
+        // 原以 byte→char（Latin-1）解碼，會把每個中文字節當成獨立字元造成亂碼。
+        val out = java.io.ByteArrayOutputStream()
+        while (true) {
+            val b = buffer.get()
+            if (b.toInt() == 0) break
+            out.write(b.toInt())
         }
-        return sb.toString()
+        return out.toString(StandardCharsets.UTF_8.name())
     }
 
     /**
