@@ -22,3 +22,4 @@ Server/.mvn/
 .idea/
 *.iml
 dumps/
+hasRan.txt
