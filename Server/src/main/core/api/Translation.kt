@@ -3,13 +3,10 @@ package core.api
 import core.ServerConstants
 import org.json.simple.JSONObject
 import org.json.simple.parser.JSONParser
-import java.io.BufferedWriter
 import java.io.FileInputStream
-import java.io.FileWriter
 import java.io.InputStreamReader
 import java.nio.charset.StandardCharsets
 import java.util.concurrent.ConcurrentHashMap
-import java.util.concurrent.ConcurrentHashMap.KeySetView
 import java.util.regex.Pattern
 
 /**
@@ -29,10 +26,6 @@ import java.util.regex.Pattern
 object Translation {
 
     private var translations: Map<String, String> = emptyMap()
-
-    /** 執行期漏翻記錄：去重集合 + 檔案寫入器。 */
-    private val missingLogged: KeySetView<String, Boolean> = ConcurrentHashMap.newKeySet()
-    private var missingWriter: BufferedWriter? = null
 
     /** 只翻譯含可辨識單字的文字。 */
     private val WORD_PATTERN = Pattern.compile("[A-Za-z]{3,}")
@@ -154,76 +147,7 @@ object Translation {
     @JvmOverloads
     fun translate(text: String, requirePhrase: Boolean = false): String {
         // 翻譯後套用「重點名中英結合」替換（Brynna → 布琳娜 (Brynna)）
-        val result = applyNameBilingual(translateCore(text, requirePhrase))
-        // 執行期漏翻記錄：最終結果仍無中文字元 → 此英文字句未翻譯，記錄待補翻
-        if (!containsCjk(result)) {
-            logMissing(text)
-        }
-        return result
-    }
-
-    /** 判斷字串是否含中文字元。 */
-    private fun containsCjk(s: String): Boolean {
-        for (c in s) if (c in '\u4e00'..'\u9fff') return true
-        return false
-    }
-
-    /** 是否值得記錄為「漏翻」：須為含英文字母的句子（過濾玩家名/單字/純標籤/純數字）。 */
-    private fun isLoggableMissing(s: String): Boolean {
-        if (s.isBlank()) return false
-        val stripped = TAG_PATTERN.matcher(s).replaceAll("")
-        if (stripped.length < 3) return false
-        var letters = 0
-        for (c in stripped) if (c.isLetter()) letters++
-        if (letters == 0) return false
-        if (!stripped.contains(" ")) return false
-        return true
-    }
-
-    /** 記錄漏翻字串到 data/logs/missing_translations.log（去重）。 */
-    @JvmStatic
-    fun logMissing(text: String) {
-        if (!isLoggableMissing(text)) return
-        missingLogged.add(text)
-        if (missingLogged.size >= 512) flushMissing()
-    }
-
-    /** 把累積的漏翻字串寫入檔案並清空。 */
-    @JvmStatic
-    fun flushMissing() {
-        val w = writer()
-            ?: return
-        synchronized(this) {
-            if (missingLogged.isNotEmpty()) {
-                try {
-                    for (s in missingLogged) {
-                        w.write(s)
-                        w.newLine()
-                    }
-                    w.flush()
-                    missingLogged.clear()
-                } catch (_: Throwable) {}
-            }
-        }
-    }
-
-    /** 延遲初始化寫入器（data/logs/missing_translations.log，啟動時清空）。 */
-    private fun writer(): BufferedWriter? {
-        if (missingWriter == null) {
-            synchronized(this) {
-                if (missingWriter == null) {
-                    try {
-                        val base = ServerConstants.CONFIG_PATH?.substringBeforeLast('/') ?: "data"
-                        val dir = java.io.File(base + "/logs")
-                        dir.mkdirs()
-                        missingWriter = BufferedWriter(FileWriter(java.io.File(dir, "missing_translations.log"), false))
-                    } catch (_: Throwable) {
-                        missingWriter = null
-                    }
-                }
-            }
-        }
-        return missingWriter
+        return applyNameBilingual(translateCore(text, requirePhrase))
     }
 
     /** 翻譯核心（不做重點名替換）。 */
