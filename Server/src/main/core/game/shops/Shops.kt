@@ -19,7 +19,9 @@ import org.json.simple.parser.JSONParser
 import org.rs09.consts.Components
 import org.rs09.consts.Items
 import org.rs09.consts.NPCs
-import java.io.FileReader
+import java.io.FileInputStream
+import java.io.InputStreamReader
+import java.nio.charset.StandardCharsets
 import content.data.Quests
 
 /**
@@ -86,7 +88,7 @@ class Shops : StartupListener, TickListener, InteractionListener, InterfaceListe
         var shopCount = 0
         logShop("Using JSON path: $path")
 
-        val reader = FileReader(path)
+        val reader = InputStreamReader(FileInputStream(path), StandardCharsets.UTF_8)
         val data = JSONParser().parse(reader) as JSONArray
 
         for(rawShop in data)

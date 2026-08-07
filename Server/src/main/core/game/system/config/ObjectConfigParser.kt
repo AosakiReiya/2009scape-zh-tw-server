@@ -8,14 +8,16 @@ import core.tools.SystemLogger
 import org.json.simple.JSONArray
 import org.json.simple.JSONObject
 import org.json.simple.parser.JSONParser
-import java.io.FileReader
+import java.io.FileInputStream
+import java.io.InputStreamReader
+import java.nio.charset.StandardCharsets
 
 class ObjectConfigParser {
     val parser = JSONParser()
-    var reader: FileReader? = null
+    var reader: java.io.Reader? = null
     fun load(){
         var count = 0
-        reader = FileReader(ServerConstants.CONFIG_PATH + "object_configs.json")
+        reader = InputStreamReader(FileInputStream(ServerConstants.CONFIG_PATH + "object_configs.json"), StandardCharsets.UTF_8)
         val configlist = parser.parse(reader) as JSONArray
         for(config in configlist){
             val e = config as JSONObject

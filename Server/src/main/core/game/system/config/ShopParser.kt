@@ -7,11 +7,13 @@ import core.ServerConstants
 import core.api.log
 import core.tools.Log
 import core.tools.SystemLogger
-import java.io.FileReader
+import java.io.FileInputStream
+import java.io.InputStreamReader
+import java.nio.charset.StandardCharsets
 
 class ShopParser{
     val parser = JSONParser()
-    var reader: FileReader? = null
+    var reader: java.io.Reader? = null
 
     companion object {
 /*        val SHOPS = HashMap<Int, Shop>()
@@ -25,7 +27,7 @@ class ShopParser{
 
     fun load(){
         var count = 0
-        reader = FileReader(ServerConstants.CONFIG_PATH + "shops.json")
+        reader = InputStreamReader(FileInputStream(ServerConstants.CONFIG_PATH + "shops.json"), StandardCharsets.UTF_8)
         val configlist = parser.parse(reader) as JSONArray
         for(config in configlist){
 
