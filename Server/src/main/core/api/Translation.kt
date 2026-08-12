@@ -146,9 +146,13 @@ object Translation {
     @JvmStatic
     @JvmOverloads
     fun translate(text: String, requirePhrase: Boolean = false): String {
-        // 翻譯後套用「重點名中英結合」替換（Brynna → 布琳娜 (Brynna)）
+        // 翻譯後套用「重點名中英結合」替換（Brynna → 布琳娜 (Brynna)）。
+        // 只在最外層套一次：內層遞迴走 translateInner 避免雙重包裹（如 Romeo → 羅密歐 (Romeo) 再包一次）。
         return applyNameBilingual(translateCore(text, requirePhrase))
     }
+
+    /** 內層翻譯（不套 applyNameBilingual，供 translateCore 遞迴使用）。 */
+    private fun translateInner(text: String, requirePhrase: Boolean = false): String = translateCore(text, requirePhrase)
 
     /** 翻譯核心（不做重點名替換）。 */
     private fun translateCore(text: String, requirePhrase: Boolean): String {
@@ -210,7 +214,7 @@ object Translation {
         // "Completion of X" → "完成 X"
         if (text.startsWith("Completion of ")) {
             val rest = text.substring("Completion of ".length).trim()
-            val zh = translate(rest, false)
+            val zh = translateInner(rest, false)
             if (zh != rest) return "完成 " + zh
             return null
         }
@@ -233,7 +237,7 @@ object Translation {
         val mc = Regex("^I must have completed (.+?)\\.?$").find(text)
         if (mc != null) {
             val cn = mc.groupValues[1]
-            val zh = translate(cn, false)
+            val zh = translateInner(cn, false)
             if (zh != cn) return "我必須先完成 " + zh + (if (text.endsWith(".")) "。" else "")
             return null
         }
@@ -241,7 +245,7 @@ object Translation {
         val lc = Regex("^Level (\\d+) ([A-Za-z ]+)\\.?$").find(text)
         if (lc != null) {
             val skill = lc.groupValues[2]
-            val zhSkill = translate(skill, false)
+            val zhSkill = translateInner(skill, false)
             if (zhSkill != skill) return "等級 " + lc.groupValues[1] + " " + zhSkill
             return null
         }
@@ -362,6 +366,112 @@ object Translation {
         "Doric's Quest" to "多里克的任務",
         "Ernest the Chicken" to "歐尼斯與雞",
         "Quest Points" to "任務點數",
+        // ==== 擴充：高頻保留英文的重要地名/人名（本地模型音譯）====
+        "Zanaris" to "札納里斯",
+        "Rimmington" to "里明頓",
+        "Brimhaven" to "布里姆哈文",
+        "Crandor" to "克蘭多",
+        "Pollnivneach" to "波利尼夫內赫",
+        "Bedabin" to "貝達賓",
+        "Taverly" to "塔弗利",
+        "Sophanem" to "索法內姆",
+        "Lletya" to "列蒂亞",
+        "Piscatoris" to "皮斯卡托利斯",
+        "Jatizso" to "賈提佐",
+        "Neitiznot" to "奈提茲諾特",
+        "Hemenster" to "海門斯特",
+        "Asgarnia" to "阿斯加尼亞",
+        "Dorgeshuun" to "多吉修恩",
+        "Paterdomus" to "帕特爾多穆斯",
+        "Khazard" to "卡扎德",
+        "Shantay" to "珊泰",
+        "Jiggig" to "吉吉格",
+        "Isafdar" to "伊薩夫達",
+        "Keldagrim" to "凱爾達格林",
+        "Miscellania" to "米賽蘭尼亞",
+        "Entrana" to "恩特拉納",
+        "Mort myre" to "莫特邁爾",
+        "Tai bwo wannai" to "泰博瓦納伊",
+        "Shilo Village" to "希洛村",
+        "Lunar Isle" to "月亮島",
+        "Port sarim" to "薩林港",
+        "Yanille" to "亞尼爾",
+        "Ape atoll" to "猿猴環礁",
+        "Waterbirth island" to "水生島",
+        "Relleka" to "瑞萊卡",
+        "Gutanoth" to "古塔諾斯",
+        "Oo'glog" to "歐格洛格",
+        "Ava" to "艾娃",
+        "Glarial" to "格拉里爾",
+        "Baxtorian" to "巴克斯托里亞",
+        "Filliman Tarlock" to "費利曼·塔洛克",
+        "Filliman" to "費利曼",
+        "Irena" to "伊蕾娜",
+        "Eluned" to "艾露妮德",
+        "Kennith" to "肯尼斯",
+        "Turael" to "圖拉艾爾",
+        "Lawgof" to "羅戈夫",
+        "Sithik" to "希提克",
+        "Thok" to "托克",
+        "Brundt" to "布倫特",
+        "Surok" to "蘇洛克",
+        "Olaf" to "奧拉夫",
+        "Tiffy" to "緹菲",
+        "Rennard" to "雷納德",
+        "Brentle" to "布倫特爾",
+        "Vahn" to "凡恩",
+        "Shabim" to "夏比姆",
+        "Herbi" to "赫比",
+        "Amik" to "阿米克",
+        "Avan Fitzharmon" to "艾凡·費茲哈蒙",
+        "Avan" to "艾凡",
+        "Wally" to "沃利",
+        "Balando" to "巴蘭多",
+        "Ceril" to "賽里爾",
+        "Zavistic" to "扎維斯提克",
+        "Siad" to "希亞德",
+        "Effendi" to "艾芬迪",
+        "Trufitus" to "特魯菲圖斯",
+        "Tenzing" to "丹增",
+        "Hetty" to "海蒂",
+        "Grish" to "格里什",
+        "Pikkupstix" to "皮克普斯提克斯",
+        "Almera" to "阿爾梅拉",
+        "Hudon" to "赫登",
+        "Blaze Sharpeye" to "烈焰銳眼",
+        "Lennissa" to "蓮妮莎",
+        "Askeladden" to "阿斯凱拉登",
+        "Dimintheis" to "迪明西斯",
+        "Leela" to "莉拉",
+        "Golrie" to "戈里",
+        "Doric" to "多里克",
+        "Kaqemeex" to "卡克米克斯",
+        "Holgart" to "霍加特",
+        "Katrine" to "卡翠琳",
+        "Dunstan" to "鄧斯坦",
+        "Sanfew" to "桑費",
+        "Hazeel" to "海茲爾",
+        "Thormac" to "索馬克",
+        "Achietties" to "阿奇提斯",
+        "Charlie" to "查理",
+        "Osman" to "奧斯曼",
+        "Rantz" to "蘭茨",
+        "Mordaut" to "莫多",
+        "Sumona" to "蘇夢娜",
+        "Icthlarin" to "伊克薩林",
+        "Juna" to "茱娜",
+        "Sigli" to "希格利",
+        "Ghommal" to "葛莫爾",
+        "Axit" to "阿克希特",
+        "Tilae" to "緹萊",
+        "Kolodion" to "科洛迪恩",
+        "Cyrisus" to "賽瑞斯",
+        "Dalvi" to "達爾維",
+        "Marjory" to "瑪喬麗",
+        "Gus" to "葛斯",
+        "K'ril Tsutsaroth" to "庫里爾·茨蘇薩羅斯",
+        "The Wise Old Man" to "智者老翁",
+        "Kalphite Queen" to "卡爾法特女王",
     )
 
     /**
