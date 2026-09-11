@@ -390,15 +390,15 @@ object Translation {
         "Keldagrim" to "凱爾達格林",
         "Miscellania" to "米賽蘭尼亞",
         "Entrana" to "恩特拉納",
-        "Mort myre" to "莫特邁爾",
-        "Tai bwo wannai" to "泰博瓦納伊",
+        "Mort Myre" to "莫特邁爾",
+        "Tai Bwo Wannai" to "泰博瓦納伊",
         "Shilo Village" to "希洛村",
         "Lunar Isle" to "月亮島",
-        "Port sarim" to "薩林港",
+        "Port Sarim" to "薩林港",
         "Yanille" to "亞尼爾",
-        "Ape atoll" to "猿猴環礁",
-        "Waterbirth island" to "水生島",
-        "Relleka" to "瑞萊卡",
+        "Ape Atoll" to "猿猴環礁",
+        "Waterbirth Island" to "水生島",
+        "Relleka" to "雷萊卡",
         "Gutanoth" to "古塔諾斯",
         "Oo'glog" to "歐格洛格",
         "Ava" to "艾娃",
@@ -474,19 +474,38 @@ object Translation {
         "Kalphite Queen" to "卡爾法特女王",
     )
 
+    /** 判斷是否含中文字元（CJK）。用於雙語化的「已翻譯」守門。 */
+    private fun hasCjk(s: String): Boolean {
+        for (c in s) {
+            if (c.code in 0x4E00..0x9FFF || c.code in 0x3400..0x4DBF) return true
+        }
+        return false
+    }
+
+    /** 預編譯雙語化規則（長名優先，避免短名先吃字）。僅在載入後建一次。 */
+    private data class BiRule(val en: String, val zh: String, val bilingual: String, val pat: Regex)
+    private val BI_RULES: List<BiRule> by lazy(LazyThreadSafetyMode.NONE) {
+        NAME_BI.entries
+            .sortedByDescending { it.key.length }
+            .map { (en, zh) -> BiRule(en, zh, "$zh ($en)", Regex("(?<![A-Za-z])${Regex.escape(en)}(?![A-Za-z])", RegexOption.IGNORE_CASE)) }
+    }
+
     /**
      * 把譯文中出現的重點名替換為「中文 (英文)」。
      * 僅替換「英文字符串中獨立出現」的名稱（避免誤替換單詞內部）。
      */
     private fun applyNameBilingual(text: String): String {
         if (text.isEmpty() || !isLoaded()) return text
+        // 守門：只在「已翻譯（含中文）」的譯文上做雙語化。
+        // 未翻譯的純英文訊息原樣返回，避免把整句英文塞成中英夾雜垃圾（如未譯的『Talk to Ava.』變成混排）。
+        if (!hasCjk(text)) return text
         var result = text
-        for ((en, zh) in NAME_BI) {
+        for (r in BI_RULES) {
             // 若譯文中已是「中文 (英文)」或已是純中文，跳過
-            if (result.contains("$zh ($en)")) continue
-            if (result.contains(zh)) continue
-            // 用邊界替換避免誤命中單詞（如 varrock 在 larger 中）
-            result = result.replace(Regex("(?<![A-Za-z])${Regex.escape(en)}(?![A-Za-z])"), "$zh ($en)")
+            if (result.contains(r.bilingual)) continue
+            if (result.contains(r.zh)) continue
+            if (!r.pat.containsMatchIn(result)) continue
+            result = result.replace(r.pat, r.bilingual)
         }
         return result
     }
