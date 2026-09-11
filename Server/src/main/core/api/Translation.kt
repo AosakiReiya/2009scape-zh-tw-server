@@ -192,6 +192,8 @@ object Translation {
         matchTemplate(text)?.let { return it }
         // 中段數值變數匹配（如執行期 "45% Done" 對應表內 "$percent% Done"）
         matchNumberTemplate(text)?.let { return it }
+        // 多變數數字模板（如 "You have completed $n tasks ... $m points"），支援 2+ 個內嵌數字
+        matchVarTemplate(text)?.let { return it }
         // 任務指南組合句（"Completion of X"、"A total of N Quest Points."）
         translateComposed(text)?.let { return it }
         // 整句 miss → 拆 token 逐一查表回填（解決執行期拼接如 "Lumbridge Area Tasks"）
@@ -366,6 +368,59 @@ object Translation {
         "Doric's Quest" to "多里克的任務",
         "Ernest the Chicken" to "歐尼斯與雞",
         "Quest Points" to "任務點數",
+        "Alfi Marino" to "阿爾菲·馬里諾",
+        "Ali Morrisane" to "艾利·莫里森",
+        "Ana" to "安娜",
+        "Aris Maye" to "艾瑞斯·梅伊",
+        "Armadyl" to "阿瑪迪爾",
+        "Bandos" to "班多斯",
+        "Charles Lyeman" to "查爾斯·萊曼",
+        "Dissy" to "迪西",
+        "Dramen" to "德拉門",
+        "Duradel" to "杜拉德爾",
+        "Elidinis" to "艾利迪尼斯",
+        "Elsie Parks" to "艾爾西·帕克斯",
+        "Enhtor Prysin" to "恩托·普里辛",
+        "Ethel Prim" to "艾瑟·普林",
+        "Excalibur" to "埃斯卡利伯",
+        "Fluffs" to "弗拉夫斯",
+        "Fred Parks" to "佛雷德·帕克斯",
+        "Fremennik" to "弗雷梅尼克",
+        "Gaffit Malore" to "加菲特·馬洛",
+        "Gianne" to "姬安",
+        "Guthix" to "古希斯",
+        "Hartigen" to "哈提根",
+        "Hartwin Prim" to "哈特溫·普林",
+        "Idonea Ramlock" to "伊多尼亞·拉姆洛克",
+        "Iffie Nitter" to "伊菲·尼特",
+        "Imcando" to "恩坎多",
+        "JalYt-Ket" to "賈伊特·凱特",
+        "Keli" to "凱莉",
+        "Kermit" to "柯米特",
+        "Konar" to "柯娜",
+        "Koschei" to "科舍伊",
+        "Laheeb" to "拉希布",
+        "Lalli" to "拉利",
+        "Mabel Malore" to "梅貝爾·馬洛",
+        "Malignius Mortifer" to "馬利尼烏斯·莫提費爾",
+        "Meiyerditch" to "梅耶迪奇",
+        "Nieve" to "妮芙",
+        "Phearthee Levalsyx" to "費瑟·萊瓦爾希克斯",
+        "Port Phasmatys" to "幽靈港",
+        "Rellugosh" to "雷魯戈什",
+        "Saradomin" to "薩拉多明",
+        "Seren" to "瑟倫",
+        "Sithik Ints" to "西提克·因茨",
+        "Surok Magis" to "蘇洛克·馬吉斯",
+        "Thessalia Nitter" to "賽莎莉亞·尼特",
+        "Tokkul" to "托庫爾",
+        "Trevick Ramlock" to "特雷維克·拉姆洛克",
+        "TzHaar" to "茲哈爾",
+        "TzTok-Jad" to "茲托克·賈德",
+        "Vet'ion" to "維提恩",
+        "Vyrewatch" to "巫妖守衛",
+        "Zamorak" to "扎莫拉克",
+        "Zaros" to "扎羅斯",
         // ==== 擴充：高頻保留英文的重要地名/人名（本地模型音譯）====
         "Zanaris" to "札納里斯",
         "Rimmington" to "里明頓",
@@ -538,6 +593,31 @@ object Translation {
                 val filled = NUMBER_VAR_PATTERN.matcher(value).replaceAll(number)
                 return filled
             }
+        }
+        return null
+    }
+
+    /** 執行期文字中的數字（含千分位/小數）。 */
+    private val VARNUM = Regex("""\\d[\\d,.]*""")
+
+    /**
+     * 多 `$var` 數字模板：表內 key 含 2+ 個 `$xxx`（或 `$xxx%`），
+     * 以字面段切掉 `$var` 組出錨定正規式，逐段捕獲執行期數字再回填譯文。
+     */
+    private fun matchVarTemplate(text: String): String? {
+        if (text.isEmpty() || !VARNUM.containsMatchIn(text)) return null
+        val varPat = Regex("""\\\$[A-Za-z_][A-Za-z_0-9]*%?""")
+        for ((key, value) in translations) {
+            if (!key.startsWith("$") && !varPat.containsMatchIn(key)) continue
+            val nvars = varPat.findAll(key).count()
+            if (nvars < 2) continue // 單變數交由 matchNumberTemplate 處理
+            val segs = varPat.split(key).map { Regex.escape(it) }
+            val pattern = Regex("^" + segs.joinToString("(\\d[\\d,.]*)") + "$")
+            val m = pattern.matchEntire(text) ?: continue
+            val groups = m.groupValues.drop(1)
+            var gi = 0
+            val filled = varPat.replace(value) { groups[gi++] }
+            return filled
         }
         return null
     }
