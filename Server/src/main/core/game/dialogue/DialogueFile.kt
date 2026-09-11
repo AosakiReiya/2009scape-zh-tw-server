@@ -31,39 +31,39 @@ abstract class DialogueFile {
             return interpreter!!.sendDialogues(
                 npc,
                 if (npc!!.id > 8591) FacialExpression.OLD_NORMAL else FacialExpression.FRIENDLY,
-                *messages
+                *pageLines(*messages)
             )
         }
         return null
     }
 
     open fun npc(id: Int, vararg messages: String?): Component? {
-        return interpreter!!.sendDialogues(id, FacialExpression.FRIENDLY, *messages)
+        return interpreter!!.sendDialogues(id, FacialExpression.FRIENDLY, *pageLines(*messages))
     }
 
     open fun npc(expression: FacialExpression?, vararg messages: String?): Component? {
         return if (npc == null) {
-            interpreter!!.sendDialogues(0, expression, *messages)
-        } else interpreter!!.sendDialogues(npc, expression, *messages)
+            interpreter!!.sendDialogues(0, expression, *pageLines(*messages))
+        } else interpreter!!.sendDialogues(npc, expression, *pageLines(*messages))
     }
 
     open fun npc(id: Int, expression: FacialExpression?, vararg messages: String?): Component? {
-        val chatBoxComponent = interpreter!!.sendDialogues(id, expression, *messages)
+        val chatBoxComponent = interpreter!!.sendDialogues(id, expression, *pageLines(*messages))
         return chatBoxComponent
     }
 
     open fun npc(id: Int, title: String, expression: FacialExpression?, vararg messages: String?): Component? {
-        val chatBoxComponent = interpreter!!.sendDialogues(id, expression, *messages)
+        val chatBoxComponent = interpreter!!.sendDialogues(id, expression, *pageLines(*messages))
         player!!.packetDispatch.sendString(title, chatBoxComponent.id, 3)
         return chatBoxComponent
     }
 
     open fun player(vararg messages: String?): Component? {
-        return interpreter!!.sendDialogues(player, null, *messages)
+        return interpreter!!.sendDialogues(player, null, *pageLines(*messages))
     }
 
     open fun player(expression: FacialExpression?, vararg messages: String?): Component? {
-        return interpreter!!.sendDialogues(player, expression, *messages)
+        return interpreter!!.sendDialogues(player, expression, *pageLines(*messages))
     }
 
     /**
@@ -109,12 +109,19 @@ abstract class DialogueFile {
         return core.api.Translation.translate(msg)
     }
 
+    /**
+     * 把同一對話頁的多個（可能因寬度被預拆的）片段先合併成整句、翻譯一次，
+     * 再依顯示寬度 splitLines 回各行。避免逐片段查表命中率低造成句中露英文。
+     */
+    private fun pageLines(vararg messages: String?): Array<String> =
+        core.api.Translation.translatePage(messages).toTypedArray()
+
     open fun end(){
         if(interpreter != null) interpreter!!.close()
     }
 
     open fun sendNormalDialogue(entity: Entity?, expression: FacialExpression?, vararg messages: String?) {
-        interpreter!!.sendDialogues(entity, expression, *messages)
+        interpreter!!.sendDialogues(entity, expression, *pageLines(*messages))
     }
 
     open fun options(vararg options: String?, title: String = "Select an Option") {

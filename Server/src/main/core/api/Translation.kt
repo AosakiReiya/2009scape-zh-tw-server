@@ -151,6 +151,24 @@ object Translation {
         return applyNameBilingual(translateCore(text, requirePhrase))
     }
 
+    /**
+     * 對話頁翻譯：把同一頁（可能因顯示寬度被預拆成多段）的片段先合併成整句翻譯；
+     * 整句命中（產生中文）則用整句譯文，否則退回逐片段翻譯（相容既有片段 key）。
+     * 最後以 splitLines 依寬度重新分行。解決「逐片段查表命中率低 → 句中露英文」。
+     */
+    @JvmStatic
+    fun translatePage(lines: Array<out String?>): List<String> {
+        val valid = lines.filterNotNull().toTypedArray()
+        if (valid.isEmpty()) return emptyList()
+        if (valid.size == 1) return splitLines(translate(valid[0])).toList()
+        val joined = valid.joinToString(" ")
+        val t = translate(joined)
+        if (t != joined && hasCjk(t)) return splitLines(t).toList()
+        val out = ArrayList<String>()
+        for (l in valid) out.addAll(splitLines(translate(l)).toList())
+        return out
+    }
+
     /** 內層翻譯（不套 applyNameBilingual，供 translateCore 遞迴使用）。 */
     private fun translateInner(text: String, requirePhrase: Boolean = false): String = translateCore(text, requirePhrase)
 

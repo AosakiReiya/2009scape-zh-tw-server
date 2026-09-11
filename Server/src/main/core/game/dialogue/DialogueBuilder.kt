@@ -2,6 +2,7 @@ package core.game.dialogue
 
 import content.data.Quests
 import core.api.splitLines
+import core.api.Translation
 import core.game.node.entity.player.Player
 import core.tools.END_DIALOGUE
 import java.util.regex.Pattern
@@ -88,7 +89,7 @@ class ItemNode(val item: Int, val values: Array<String>): DialogueNode {
         return "[label=\"item(${item}, \\\"${values.contentDeepToString()}\\\")\"]; @index -> @indexPlus;"
     }
     override fun handle(df: DialogueFile, componentID: Int, buttonID: Int, stage: Int): Int {
-        df.interpreter!!.sendItemMessage(item, *values)
+        df.interpreter!!.sendItemMessage(item, *Translation.translatePage(values.toList().toTypedArray()).toTypedArray())
         return stage + 1
     }
 }
@@ -359,7 +360,7 @@ class DialogueBuilder(var target: DialogueBuilderFile, var clauseIndex: Int = -1
     }
     fun line(vararg values: String): DialogueBuilder {
         return manualStage() { df, player, _, _ ->
-            df.interpreter!!.sendDialogue(*(values as Array<String>))
+            df.interpreter!!.sendDialogue(*Translation.translatePage(values.toList().toTypedArray()).toTypedArray())
         }
     }
     fun linel(value: String): DialogueBuilder {
