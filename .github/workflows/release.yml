@@ -1,0 +1,50 @@
+name: Release server
+
+# 打 tag（v*）即自動編譯並發佈 GitHub Release。
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+
+      - name: Set up Gradle 7.4.2
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '7.4.2'
+
+      - name: Build fat jar
+        run: gradle -p Server jar --console=plain
+
+      - name: Stage assets
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          JAR="$(ls Server/build/libs/*.jar | head -1)"
+          cp "$JAR" dist/server-zh-tw.jar
+          sha256sum dist/server-zh-tw.jar | awk '{print $1}' > dist/server-zh-tw.jar.sha256
+          # 漢化後資料夾：configs + worldprops（不含 cache，容量考量）
+          (cd Server && zip -rq ../dist/server-data-zh-tw.zip data worldprops)
+          sha256sum dist/server-data-zh-tw.zip | awk '{print $1}' > dist/server-data-zh-tw.zip.sha256
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh release create "$GITHUB_REF_NAME" dist/* \
+            --title "2009scape-zh-tw-server $GITHUB_REF_NAME" \
+            --generate-notes
