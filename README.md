@@ -1,3 +1,19 @@
+# 2009scape-zh-tw-server — 正體中文漢化伺服器
+
+這裡是 [2009scape](https://2009scape.org)（社群開源復刻 2009 年風貌 RuneScape 的專案）伺服器漢化為正體中文的 fork（`zh-tw` 分支）：訊息／對話翻譯攔截器＋漢化後的 configs（道具、NPC、商店名稱與字串詞表）。
+
+**想直接玩的請留步**：你不需要這個倉。到姊妹倉 [rt4-client-zh-tw](https://github.com/AosakiReiya/rt4-client-zh-tw) 的 [Releases](https://github.com/AosakiReiya/rt4-client-zh-tw/releases) 拿 `2009scape-zh-tw-singleplayer-win64.zip`（或 `linux64`）——一鍵離線單機包，內含漢化伺服器、客戶端、遊戲 cache 與 Java，解壓雙擊即玩。本倉的 Releases（`server-zh-tw.jar` + `server-data-zh-tw.zip`）是給要自建正體中文伺服器的人。
+
+自建執行：JDK 11+，把 `server-zh-tw.jar`、解壓 `server-data-zh-tw.zip` 得到的 `data/`、`worldprops/` 放同一目錄，`java -Xmx2G -jar server.jar`。遊戲 cache（約 90MB）不在發佈內，需自行取自官方單機包 <https://gitlab.com/2009scape/singleplayer/windows> 解壓後的 `game/data/cache/`，放到 `data/cache/`。
+
+建置：本 fork 以 Gradle 取代上游 Maven（Kotlin daemon 在低記憶體環境較穩）：`gradle -p Server jar`。發佈：打 `v*` tag → GitHub Actions 自動編譯並建立 Release。
+
+翻譯由本地 LLM（gemma）批次產生、以術語表約束一致性，未逐條人工審校，誤翻漏翻歡迎開 issue 回報。
+
+Credits：上游原始碼 <https://gitlab.com/2009scape/2009scape>（AGPL-3.0）、ConstLib <https://gitlab.com/2009scape/constlib>；本專案為社群改作，與 Jagex 及 2009scape 官方團隊無隸屬關係。以下保留上游原版 README 全文供開發參考。
+
+---
+
 [![AGPL-3.0 License][license-shield]][license-url]
 
 <br />
